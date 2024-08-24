@@ -1,0 +1,104 @@
+main {
+    width: 100%;
+    height: 100%;
+}
+
+div.main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(var(--linear-gradient-color-1), var(--linear-gradient-color-2));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.login {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    height: 70%;
+}
+
+div.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.logo img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+#dogs {
+    position: absolute;
+    width: 300px;
+    top: 0;
+    margin-top: 4%;
+
+}
+
+div.login-right {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+div.login-right div.top-text p {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+div.login-right div.login-body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div.login-right div.login-body form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div.login-right div.login-body form input {
+    width: 80%;
+    height: 30px;
+    font-size: var(--normal-text-size);
+    padding: 5px;
+    border: var(--transparent-border);
+    border-radius: 5px;
+}
+
+div.login-right div.login-body form label {
+    font-size: var(normal-text-size);
+    font-weight: 400;
+    align-self: self-start;
+    margin-left: 9%;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+div.login-right div.login-body form input[type=submit] {
+    margin: 5%;
+    width: 50%;
+    height: 40px;
+    cursor: pointer;
+}
+
+div.login-right div.footer-options {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-height: 700px) {
+    #dogs {
+        margin-top: 9%;
+    }
+}

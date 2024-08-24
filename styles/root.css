@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button,
+input {
+    outline: none;
+}
+
+:root {
+
+    /* Colors */
+    --linear-gradient-color-1: #D48EFFCC;
+    --linear-gradient-color-2: #6FEF7BCC;
+
+    /* Text */
+    --normal-text-size: 17px;
+
+    /* Borders */
+
+    --transparent-border: 1px solid transparent;
+
+    /* Sizes */
+}
