@@ -11,8 +11,9 @@ input {
 :root {
 
     /* Colors */
-    --linear-gradient-color-1: #D48EFFCC;
-    --linear-gradient-color-2: #6FEF7BCC;
+    --linear-gradient-color-1: #8b95d1;
+    --linear-gradient-color-2: #dadeff;
+    --linear-gradient-color-3: #f58d2d;
 
     /* Text */
     --normal-text-size: 17px;

@@ -31,14 +31,6 @@ div.logo img {
     border-radius: 10px;
 }
 
-#dogs {
-    position: absolute;
-    width: 300px;
-    top: 0;
-    margin-top: 4%;
-
-}
-
 div.login-right {
     flex-direction: column;
     justify-content: space-around;
@@ -95,10 +87,4 @@ div.login-right div.footer-options {
     width: 100%;
     align-items: center;
     justify-content: center;
-}
-
-@media screen and (min-height: 700px) {
-    #dogs {
-        margin-top: 9%;
-    }
 }
