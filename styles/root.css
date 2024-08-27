@@ -14,6 +14,13 @@ input {
     --linear-gradient-color-1: #8b95d1;
     --linear-gradient-color-2: #dadeff;
     --linear-gradient-color-3: #f58d2d;
+    --linear-gradient-color-4: #3949ae;
+
+    --main-color: #8b95d1;
+    --second-color: #dadeff;
+    --buttons-color: #f58d2d;
+    --text-color: #fff;
+
 
     /* Text */
     --normal-text-size: 17px;
