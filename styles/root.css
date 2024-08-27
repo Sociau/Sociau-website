@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,10 @@
 button,
 input {
     outline: none;
+}
+
+body {
+    font-family: var(--default-font);
 }
 
 :root {
@@ -19,8 +25,11 @@ input {
     --normal-text-size: 17px;
 
     /* Borders */
-
     --transparent-border: 1px solid transparent;
 
     /* Sizes */
+
+    /* Font */
+    --default-font: 'Montserrat', sans-serif;
+    --normal-weigth: 400;
 }
