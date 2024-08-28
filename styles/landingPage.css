@@ -1,0 +1,48 @@
+.main{
+    background-color: var(--linear-gradient-color-1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.welcome{
+    height: 223px;
+    width: 463px;
+
+    position: absolute;
+
+    top: 45%;
+    right: 55%;
+}
+
+.welcome p{
+    font-size: 45px; 
+    color: white;
+}
+
+.main-button{
+    /* Button background configs */
+    background-color: var(--linear-gradient-color-3);
+    outline: none;
+    border: 0px;
+
+    box-shadow: 1px 1px 15px var(--linear-gradient-color-2);
+
+    border-radius: 20px;
+    height: 75.28px;
+    width: 235px;
+
+    position: absolute;
+
+    top: 55%;
+    left: 15%;
+
+    /* Text configs */
+    padding-left: 5px;
+    text-align: left;
+    font-weight: bold;
+    font-size: var(--normal-text-size);
+    color: white;
+
+}
