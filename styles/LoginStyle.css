@@ -1,4 +1,4 @@
-main{   
+main {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -7,82 +7,90 @@ main{
     overflow: hidden;
 }
 
-.img-container{
+.img-container {
     width: 51%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--second-color);
 }
 
-.login-container{
+.img-container img {
+    width: 150%;
+    margin-bottom: 15%;
+}
+
+.login-container {
     width: 49%;
     height: 100%;
     background-color: var(--buttons-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding-top: 70px;
 }
 
-.login-container .login-title p{
+.login-container .login-title p {
     font-weight: 600;
-    font-size: 60px;
+    font-size: 50px;
     color: var(--text-color);
-    margin-bottom: 30%;
+    margin-bottom: 20%;
 }
 
-.login-container .login-form form{
+.login-container .login-form form {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 70%;
     align-items: center;
 }
-.login-container .login-form{
+
+.login-container .login-form {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.login-container .login-form img{
+.login-container .login-form img {
     width: 100px;
     position: absolute;
-    margin-left: 33%;
-    margin-top: 1.5%;
+    margin-left: 28%;
+    margin-top: 1%;
 }
 
-.login-container .login-form div{
+.login-container .login-form div {
     width: 100%;
     display: flex;
 }
 
-.login-container .login-form input{
+.login-container .login-form input {
     width: 100%;
-    height: 80px;
+    height: 60px;
     font-size: 20px;
     border: var(--transparent-border);
     margin-top: 2.5%;
     margin-bottom: 2.5%;
 }
 
-.login-container .login-form input[type="text"], .login-container .login-form input[type="password"]{
+.login-container .login-form input[type="text"],
+.login-container .login-form input[type="password"] {
     padding-left: 5%;
     padding-right: 15%;
 }
 
 
-.login-container .login-form input[type="submit"]{
-    width: 70%;
+.login-container .login-form input[type="submit"] {
+    width: 65%;
     border-radius: 50px;
     background-color: var(--third-color);
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 600;
     color: var(--text-color);
 }
 
-.login-container .login-form span{
+.login-container .login-form span {
     color: var(--text-color);
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
     display: flex;
     justify-content: flex-end;
@@ -90,19 +98,19 @@ main{
 
 }
 
-.login-container .login-form span a{
+.login-container .login-form span a {
     text-decoration: none;
     color: var(--text-color);
     text-align: end;
 }
 
-.login-container .register-btn span{
-    font-size: 26px;
+.login-container .register-btn span {
+    font-size: 17px;
     font-weight: 600;
     color: var(--text-color);
 }
 
-.login-container .register-btn span a{
+.login-container .register-btn span a {
     text-decoration: none;
     color: var(--third-color);
 }

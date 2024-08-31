@@ -1,6 +1,6 @@
 .top-menu {
     display: flex;
-    height: 70px;
+    height: 50px;
     width: 98%;
     position: absolute;
     background-color: var(--main-color);
@@ -10,6 +10,7 @@
     padding: 1%;
     overflow: hidden;
     border-bottom: 1px solid var(--text-color);
+    z-index: 999;
 }
 
 .top-menu .logo {
