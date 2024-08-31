@@ -17,15 +17,13 @@ body {
 :root {
 
     /* Colors */
-    --linear-gradient-color-1: #8b95d1;
-    --linear-gradient-color-2: #dadeff;
-    --linear-gradient-color-3: #f58d2d;
-    --linear-gradient-color-4: #3949ae;
 
     --main-color: #8b95d1;
     --second-color: #dadeff;
+    --third-color: #3949ae;
     --buttons-color: #f58d2d;
-    --text-color: #fff;
+    --text-color: #ffffff;
+
 
 
     /* Text */
