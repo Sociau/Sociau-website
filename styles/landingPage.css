@@ -1,12 +1,13 @@
-.main-landing{
+main {
     display: flex;
     width: 100%;
     height: 100vh;
 
     background-color: var(--main-color);
+    overflow: hidden;
 }
 
-.welcome{
+.welcome {
     height: 223px;
     width: 463px;
 
@@ -14,12 +15,12 @@
     right: 55%;
 }
 
-.welcome p{
-    font-size: 45px; 
+.welcome p {
+    font-size: 45px;
     color: var(--text-color);
 }
 
-.main-button{
+.main-button {
     /* Button background configs */
     background-color: var(--buttons-color);
     outline: none;
