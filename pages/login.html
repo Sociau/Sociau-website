@@ -3,12 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Sociau - Login</title>
     <link rel="stylesheet" href="../styles/root.css">
+    <link rel="stylesheet" href="../styles/top-menu.css">
     <link rel="stylesheet" href="../styles/responsive.css">
     <link rel="stylesheet" href="../styles/loginStyle.css">
 </head>
 <body>
+    <div class="top-menu">
+        <a class="logo" href="../index.html">
+            <div class="logo-icon">
+                <img src="../public/images/svg/Sociau_icon.svg" alt="">
+            </div>
+            <img id="logo" src="../public/images/png/sociau_logo.png" alt="">
+        </a>
+        <div class="menu">
+            <ul>
+                <li><a id="option" href="./aboutUs.html">Quem Somos</a></li>
+                <li><a id="option" href="./help.html">Quero Ajudar</a></li>
+                <li><a id="option" href="./contact.html">Contato</a></li>
+                <li>
+                    <a href="./login.html">
+                        <button class="button-login">Login/Cadastre-se</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <main>
         <div class="img-container">
             <img src="../public/images/png/CatImgLogin.png" alt="Gato rasgando tela e aparecendo">
@@ -32,7 +53,7 @@
                 </form>
             </div>
             <div class="register-btn">
-                <span>Não tem uma conta? <a href="#">Cadastre-se</a> </span>
+                <span>Não tem uma conta? <a href="./createAccount.html">Cadastre-se</a> </span>
             </div>
         </div>
     </main>
