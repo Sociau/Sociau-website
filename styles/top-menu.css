@@ -1,0 +1,101 @@
+.top-menu {
+    display: flex;
+    height: 70px;
+    width: 98%;
+    position: absolute;
+    background-color: var(--main-color);
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+    overflow: hidden;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.top-menu .logo {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.5s;
+    transform: scale(0.9);
+}
+
+.top-menu .logo:hover {
+    transition: 0.5s;
+    transform: scale(1);
+}
+
+.top-menu .logo #logo {
+    width: 200px;
+    height: 50px;
+}
+
+.top-menu .logo .logo-icon {
+    display: flex;
+    background-color: var(--buttons-color);
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-menu .logo .logo-icon img {
+    width: 70px;
+    height: 70px;
+}
+
+.top-menu .menu {
+    width: 65%;
+}
+
+.top-menu .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-menu .menu ul li #option {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-menu .menu ul li #option::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+.top-menu .menu ul li #option:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.top-menu .menu ul li button {
+    transition: 0.5s;
+    width: 246px;
+    height: 48px;
+    background-color: var(--buttons-color);
+    color: var(--text-color);
+    border: var(--transparent-border);
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.top-menu .menu ul li button:hover {
+    transition: 0.5s;
+    box-shadow: 2px 2px 15px var(--text-color);
+}

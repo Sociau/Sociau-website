@@ -12,6 +12,13 @@ input {
 
 body {
     font-family: var(--default-font);
+    overflow: hidden;
+}
+
+main {
+    position: absolute;
+    margin-top: 98px;
+    overflow: hidden;
 }
 
 :root {
