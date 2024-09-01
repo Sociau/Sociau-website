@@ -3,43 +3,48 @@ main {
     width: 100%;
     height: 100vh;
 
-    background-color: var(--main-color);
+    background: url("../public/images/png/home.png");
+    background-size: 75%;
+    background-position: center;
     overflow: hidden;
 }
 
-.welcome {
-    height: 223px;
-    width: 463px;
-
-    top: 45%;
-    right: 55%;
-}
-
-.welcome p {
-    font-size: 45px;
+.home-text {
+    margin-top: 13%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
     color: var(--text-color);
+    font-size: 40px;
+    width: 30%;
+    height: max-content;
 }
 
-.main-button {
-    /* Button background configs */
+.home-text .text {
     background-color: var(--buttons-color);
-    outline: none;
-    border: 0px;
+    font-size: 20px;
+    width: 55%;
+    height: 75px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
 
-    box-shadow: 1px 1px 15px var(--second-color);
+.home-text .text p {
+    padding: 5%;
+}
 
-    border-radius: 20px;
-    height: 75.28px;
-    width: 235px;
+.pets {
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    right: 0;
+    bottom: 0;
+    margin-right: -120px;
+    margin-bottom: 40px;
+}
 
-    top: 55%;
-    left: 15%;
-
-    /* Text configs */
-    padding-left: 5px;
-    text-align: left;
-    font-weight: bold;
-    font-size: var(--normal-text-size);
-    color: white;
-
+.pets img {
+    width: 100%;
 }
