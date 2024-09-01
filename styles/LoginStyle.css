@@ -80,12 +80,21 @@ main {
 
 
 .login-container .login-form input[type="submit"] {
+    transition: 0.5s ease;
     width: 65%;
     border-radius: 50px;
     background-color: var(--third-color);
     font-size: 20px;
     font-weight: 600;
     color: var(--text-color);
+    cursor: pointer;
+    box-shadow: none;
+
+}
+
+.login-container .login-form input[type="submit"]:hover {
+    transition: 0.5s ease;
+    box-shadow: 2px 2px 10px var(--third-color);
 }
 
 .login-container .login-form span {
