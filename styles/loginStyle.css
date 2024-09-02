@@ -123,3 +123,31 @@ main {
     text-decoration: none;
     color: var(--third-color);
 }
+
+
+@media screen and (max-width: 786px) {
+    main {
+        flex-direction: column;
+    }
+
+    .img-container {
+        display: none;
+    }
+
+    .login-container {
+        width: 100%;
+    }
+
+    .login-container .login-form form {
+        width: 90%;
+    }
+
+    .login-container .login-form input[type="submit"] {
+        width: 80%;
+    }
+
+    .login-container .login-form img {
+        margin-left: 70%;
+        margin-top: 1.5%;
+    }
+}
