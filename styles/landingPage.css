@@ -48,3 +48,39 @@ main {
 .pets img {
     width: 100%;
 }
+
+@media screen and (max-width: 1024px) {
+    .pets {
+        display: none;
+    }
+
+    main {
+        justify-content: center;
+    }
+
+    .home-text {
+        margin-left: 0;
+        margin-top: 50%;
+        width: 90%;
+        font-size: 30px;
+    }
+
+    .home-text .text {
+        padding: 1%;
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .home-text .text {
+        padding: 1%;
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .home-text .text {
+        padding: 0;
+        width: 50%;
+    }
+}
