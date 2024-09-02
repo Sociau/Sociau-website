@@ -125,7 +125,7 @@ main {
 }
 
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 1024px) {
     main {
         flex-direction: column;
     }
