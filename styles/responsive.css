@@ -88,44 +88,80 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1200px) {
+    main {
+        margin-top: 65px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    main {
+        margin-top: 71px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
     main {
         margin-top: 70px;
     }
 }
 
+@media screen and (min-width: 820px) {
+    main {
+        margin-top: 65px;
+    }
+}
+
 @media screen and (max-width: 820px) {
-    main {
-        margin-top: 310px;
-    }
-}
-
-@media screen and (max-width: 786px) {
-    main {
-        margin-top: 305px;
-    }
-}
-
-@media screen and (max-width: 540px) {
     main {
         margin-top: 270px;
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 819px) {
+    main {
+        margin-top: 270px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    main {
+        margin-top: 265px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        margin-top: 260px;
+    }
+}
+
+@media screen and (max-width: 480px) {
     main {
         margin-top: 255px;
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 440px) {
     main {
         margin-top: 250px;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     main {
         margin-top: 240px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    main {
+        margin-top: 230px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    main {
+        margin-top: 225px;
     }
 }
