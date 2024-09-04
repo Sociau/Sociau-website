@@ -1,0 +1,203 @@
+main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+    background: url("../public/images/png/home.png");
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.img-dog{
+    width: 60%;
+    bottom: -10px;
+    right: -150px;
+    position: absolute;
+}
+
+.img-dog img{
+    width: 100%;
+}
+
+.register{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--third-color);
+    z-index: 999;
+    align-items: center;
+}
+
+.title-register{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.title-register p{
+    font-size: 60px;
+    color: var(--text-color);
+    font-weight: 600;
+
+}
+
+.register .form-register{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+}
+
+.register .form-register form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.no-icon{
+    padding-left: 10%;
+}
+
+.has-icon label{
+    padding-left: 6%;
+}
+
+.sub-fields{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-fields .sub-field-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.sub-field-row div{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+}
+
+.sub-field-row input{
+    width: 82%;
+}
+
+.sub-field-row div div{
+    align-items: start;
+
+}
+
+.sub-field-row label{
+    padding-left: 10%;
+}
+
+.button-save{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 7%;
+    padding-bottom: 3%;
+}
+
+.button-save input[type="submit"]{
+    background-color: var(--buttons-color);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    border: transparent;
+    border-radius: 50px;
+    height: 60px;
+}
+
+textarea{
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 170px;
+    max-height: 170px;
+    padding-left: 1%;
+    margin-top: 1%;
+    padding-right: 1%;
+    font-size: 17px;
+
+}
+
+form p{
+    display: flex;
+    align-self: flex-start;
+    font-size: 15px;
+    padding-left: 4%;
+    color: var(--text-color);
+
+}
+
+form div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form div div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-top: 3%;
+}
+
+form div img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+
+form input{
+    width: 90%;
+    height: 40px;
+    font-size: 17px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-top: 1%;
+}
+
+form label{
+    font-size: 20px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+.top-menu {
+    justify-content: start;
+    width: 49%;
+}
+
+.top-menu .logo {
+    justify-content: start;
+}
+
+.top-menu .logo #logo {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    margin-left: 5%;
+}
+
+.top-menu .logo:hover #logo {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
