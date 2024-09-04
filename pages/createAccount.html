@@ -8,30 +8,157 @@
     <link rel="stylesheet" href="../styles/root.css">
     <link rel="stylesheet" href="../styles/responsive.css">
     <link rel="stylesheet" href="../styles/top-menu.css">
+    <link rel="stylesheet" href="../styles/createAccount.css">
 </head>
 <body>
-    <div class="top-menu" style="background-color: #8b95d1;">
+    <div class="top-menu">
         <a class="logo" href="../index.html">
             <div class="logo-icon">
                 <img src="../public/images/svg/Sociau_icon.svg" alt="">
             </div>
             <img id="logo" src="../public/images/png/sociau_logo.png" alt="">
         </a>
-        <div class="menu">
-            <ul>
-                <li><a id="option" href="./aboutUs.html">Quem Somos</a></li>
-                <li><a id="option" href="./help.html">Quero Ajudar</a></li>
-                <li><a id="option" href="./contact.html">Contato</a></li>
-                <li>
-                    <a href="./login.html">
-                        <button class="button-login">Login/Cadastre-se</button>
-                    </a>
-                </li>
-            </ul>
-        </div>
     </div>
-    <main style="margin-top: 78px;">
-        <h1>Criar conta</h1>
+    <main>
+        <div class="register">
+            <div class="title-register">
+                <p>CADASTRO</p>
+            </div>
+            <div class="form-register">
+                <form action="#">
+                    <div class="your-name">
+                        <div class="no-icon">
+                            <label for="yourname">
+                                Seu nome*
+                            </label>
+                        </div>
+                        <input type="text" name="yourname" id="yourname">
+                    </div>
+
+                    <div class="surname">
+                        <div class="no-icon">
+                            <label for="surname">
+                                Apelido*
+                            </label>
+                        </div>
+                        <input type="text" name="surname" id="surname">
+                        <p>Seu apelido será o seu login.</p>
+                    </div>
+                    
+                    <div class="email">
+                        <div class="no-icon">
+                            <label for="email">
+                                Email*
+                            </label>
+                        </div>
+                        <input type="text" name="email" id="email">
+                        <p>Coloque um email ativo para receber informações sobre a adoção ou documentações.</p>
+                    </div>
+
+                    <div class="confirm-email">
+                        <div class="no-icon">
+                            <label for="email-confirm">
+                                Confirmação de email*
+                            </label>
+                        </div>
+                        <input type="text" name="email-confirm" id="email-confirm">
+                        <p>Coloque um email ativo para receber informações sobre a adoção ou documentações.</p>
+                    </div>
+
+                    <div class="whatsapp">
+                        <div class="no-icon">
+                            <label for="whatsapp">
+                                WhatsApp*
+                            </label>
+                        </div>
+                        <input type="text" name="whatsapp" id="whatsapp">
+                    </div>
+
+                    <div class="second-whatsapp">
+                        <div class="no-icon">
+                            <label for="second-whatsapp">
+                                WhatsApp Secundário
+                            </label>
+                        </div>
+                        <input type="text" name="second-whatsapp" id="second-whatsapp">
+                    </div>
+
+                    <div class="sub-fields">
+                        <div class="sub-field-row">
+                            <div class="state">
+                                <div class="no-icon">
+                                    <label for="state">
+                                        Estado*
+                                    </label>
+                                </div>
+                                <input type="text" name="state" id="state">
+                            </div>
+                            <div class="city">
+                                <div class="no-icon">
+                                    <label for="city">
+                                        Cidade*
+                                    </label>
+                                </div>
+                                <input type="text" name="city" id="city">
+                            </div>
+                        </div>
+
+                        <div class="sub-field-row">
+                            <div class="street">
+                                <div class="no-icon">
+                                    <label for="street">
+                                        Rua*
+                                    </label>
+                                </div>
+                                <input type="text" name="street" id="street">
+                            </div>
+                            <div class="neighborhood">
+                                <div class="no-icon">
+                                    <label for="neighborhood">
+                                        Bairro*
+                                    </label>
+                                </div>
+                                <input type="text" name="city" id="city">
+                            </div>
+                        </div>
+
+                        <div class="sub-field-row">
+                            <div class="password">
+                                <div class="no-icon">
+                                    <label for="password">
+                                        Senha*
+                                    </label>  
+                                </div>
+                                <input type="text" name="password" id="password">
+                            </div>
+                            <div class="confirm-password">
+                                <div class="no-icon">
+                                    <label for="confirm-password">
+                                        Confirmar Senha*
+                                    </label>
+                                </div>
+                                <input type="text" name="confirm-password" id="confirm-password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-you">
+                        <div class="no-icon">
+                            <label for="about-you">
+                                Sobre você*
+                            </label>  
+                        </div>
+                        <textarea name="about-you" id="about-you"></textarea>
+                    </div>
+
+                    <div class="button-save">
+                        <input type="submit" value="Salvar">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="img-dog">
+            <img src="../public/images/png/Imagem cachorro.png" alt="Cachorro olhando a tela">
+        </div>
     </main>
 </body>
 </html>
