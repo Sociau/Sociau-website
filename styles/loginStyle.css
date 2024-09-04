@@ -14,6 +14,7 @@ main {
     align-items: center;
     justify-content: center;
     background-color: var(--second-color);
+    padding-top: 70px;
 }
 
 .img-container img {
@@ -28,7 +29,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 130px;
 }
 
 .login-container .login-title p {
@@ -122,6 +123,26 @@ main {
 .login-container .register-btn span a {
     text-decoration: none;
     color: var(--third-color);
+}
+
+.top-menu {
+    justify-content: start;
+    width: 49%;
+}
+
+.top-menu .logo {
+    justify-content: start;
+}
+
+.top-menu .logo #logo {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    margin-left: 5%;
+}
+
+.top-menu .logo:hover #logo {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
 }
 
 
