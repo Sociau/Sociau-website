@@ -3,13 +3,12 @@
     height: 50px;
     width: 98%;
     position: absolute;
-    background-color: var(--main-color);
+    background: transparent;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     padding: 1%;
     overflow: hidden;
-    border-bottom: 1px solid var(--text-color);
     z-index: 999;
 }
 

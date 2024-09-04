@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    scrollbar-width: none;
 }
 
 button,
@@ -17,7 +18,6 @@ body {
 
 main {
     position: absolute;
-    margin-top: 78px;
     overflow: hidden;
 }
 

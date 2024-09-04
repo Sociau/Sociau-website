@@ -4,8 +4,7 @@ main {
     height: 100vh;
 
     background: url("../public/images/png/home.png");
-    background-size: 75%;
-    background-position: center;
+    background-size: 100%;
     overflow: hidden;
 }
 
@@ -18,12 +17,13 @@ main {
     font-size: 40px;
     width: 30%;
     height: max-content;
+    font-weight: 600;
 }
 
 .home-text .text {
     background-color: var(--buttons-color);
     font-size: 20px;
-    width: 55%;
+    width: 60%;
     height: 75px;
     border-radius: 10px;
     display: flex;
@@ -32,17 +32,15 @@ main {
 }
 
 .home-text .text p {
+    width: 100%;
     padding: 5%;
 }
 
 .pets {
+    width: 75%;
     position: absolute;
-    width: 800px;
-    height: 600px;
-    right: 0;
-    bottom: 0;
-    margin-right: -120px;
-    margin-bottom: 40px;
+    right: -50px;
+    bottom: -10px;
 }
 
 .pets img {
@@ -54,8 +52,14 @@ main {
         display: none;
     }
 
+    body {
+        overflow-y: scroll;
+    }
+
     main {
         justify-content: center;
+        background-size: 150%;
+
     }
 
     .home-text {
@@ -76,11 +80,35 @@ main {
         padding: 1%;
         width: 25%;
     }
+
+    .home-text {
+        margin-top: 60%;
+    }
+
+    main {
+        background-size: 200%;
+    }
 }
+
 
 @media screen and (max-width: 786px) {
     .home-text .text {
         padding: 0;
         width: 50%;
+    }
+
+    main {
+        background-size: 300%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .home-text .text {
+        padding: 0;
+        width: 50%;
+    }
+
+    main {
+        background-size: 400%;
     }
 }
