@@ -103,7 +103,15 @@
     box-shadow: 2px 2px 15px var(--text-color);
 }
 
+#back{
+    display: none;
+}
+
 @media screen and (max-width: 820px) {
+
+    #back{
+        display: block;
+    }
     .top-menu {
         flex-direction: column;
         height: max-content;
