@@ -4,7 +4,7 @@ document.getElementById('sociau_logo').addEventListener('click', function () {
         var ul = document.getElementById('menu-list');
         ul.style.display = ul.style.display === 'flex' ? 'none' : 'flex';
     } else {
-        folder = (window.location.href).split('/')[3];
+        folder = (window.location.href).split('/')[4];
 
         if (folder == 'pages') {
             window.location.href = '../index.html';
