@@ -1,0 +1,144 @@
+main {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+.first-info,
+.second-info,
+.third-info {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.first-info {
+    background: url('../public/images/png/imagem_principal_quem_somos.png');
+    background-size: 100%;
+    align-items: end;
+}
+
+.second-info {
+    background: url('../public/images/png/paws.png') no-repeat bottom;
+    background-color: var(--main-color);
+    flex-direction: column;
+    background-size: 101%;
+    height: 120vh;
+}
+
+.third-info {
+    background: var(--third-color);
+}
+
+.first-info .text {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: max-content;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.first-info .text p:first-child {
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+.first-info .text p {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.first-info .text span {
+    color: #000000;
+}
+
+.second-info .top-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.second-info .top-info p {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--third-color);
+}
+
+.second-info .bank-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.second-info .bank-info p {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.second-info .bank-info .pix {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-info .bank-info .pix img {
+    width: 60%;
+}
+
+.second-info .bank-info .ted {
+    width: 60%;
+}
+
+.second-info .bank-info .bank-info-title {
+    font-size: 50px;
+}
+
+.third-info {
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+}
+
+.third-info p {
+    color: var(--text-color);
+    width: 90%;
+    font-weight: 600;
+    padding-top: 3%;
+}
+
+.third-info .title {
+    font-size: 45px;
+    text-decoration: underline;
+
+}
+
+.third-info .text {
+    font-size: 32px;
+}
+
+.third-info .icons {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.third-info .icons img {
+    width: 25%;
+}
+
+.top-menu {
+    background-color: var(--main-color);
+}
