@@ -142,3 +142,9 @@ main {
 .top-menu {
     background-color: var(--main-color);
 }
+
+@media screen and (max-width: 820px) {
+    .top-menu {
+        background-color: transparent;
+    }
+}

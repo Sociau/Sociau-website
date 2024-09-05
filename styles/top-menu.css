@@ -112,6 +112,7 @@
 
     .top-menu .menu ul {
         flex-direction: column;
+        display: none;
     }
 
     .top-menu .menu ul li {

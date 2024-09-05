@@ -14,7 +14,7 @@ main {
     align-items: center;
     justify-content: center;
     background-color: var(--second-color);
-    padding-top: 70px;
+    padding-top: 5%;
 }
 
 .img-container img {
@@ -29,7 +29,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 130px;
+    padding-top: 10%;
 }
 
 .login-container .login-title p {
@@ -147,8 +147,27 @@ main {
 
 
 @media screen and (max-width: 1024px) {
+
+    .top-menu {
+        width: 90%;
+    }
+
+    .top-menu .logo {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .top-menu .logo #logo {
+        opacity: 1;
+    }
+
     main {
         flex-direction: column;
+        height: 100vh;
+        overflow-y: scroll;
+        overflow-y: hidden;
     }
 
     .img-container {
@@ -157,7 +176,9 @@ main {
 
     .login-container {
         width: 100%;
+        padding-top: 50%;
     }
+
 
     .login-container .login-form form {
         width: 90%;
