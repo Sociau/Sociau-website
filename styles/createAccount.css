@@ -8,18 +8,18 @@ main {
     overflow: hidden;
 }
 
-.img-dog{
+.img-dog {
     width: 60%;
     bottom: -10px;
     right: -150px;
     position: absolute;
 }
 
-.img-dog img{
+.img-dog img {
     width: 100%;
 }
 
-.register{
+.register {
     width: 49%;
     display: flex;
     flex-direction: column;
@@ -28,76 +28,77 @@ main {
     align-items: center;
 }
 
-.title-register{
+.title-register {
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 10%;
-    padding-bottom: 5%;
 }
 
-.title-register p{
+.title-register p {
     font-size: 60px;
     color: var(--text-color);
     font-weight: 600;
-
 }
 
-.register .form-register{
+.register .form-register {
     width: 90%;
     display: flex;
     justify-content: center;
-    overflow-x: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 5%;
 }
 
-.register .form-register form{
+.register .form-register form {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-.no-icon{
+
+.no-icon {
     padding-left: 10%;
 }
 
-.has-icon label{
+.has-icon label {
     padding-left: 6%;
 }
 
-.sub-fields{
+.sub-fields {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.sub-fields .sub-field-row{
+.sub-fields .sub-field-row {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
 }
 
-.sub-field-row div{
+.sub-field-row div {
     padding: 0;
     display: flex;
     flex-direction: column;
     padding-top: 3%;
 }
 
-.sub-field-row input{
+.sub-field-row input {
     width: 82%;
 }
 
-.sub-field-row div div{
+.sub-field-row div div {
     align-items: start;
 
 }
 
-.sub-field-row label{
+.sub-field-row label {
     padding-left: 10%;
 }
 
-.button-save{
+.button-save {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -105,7 +106,7 @@ main {
     padding-bottom: 3%;
 }
 
-.button-save input[type="submit"]{
+.button-save input[type="submit"] {
     background-color: var(--buttons-color);
     font-size: 24px;
     font-weight: 600;
@@ -113,9 +114,10 @@ main {
     border: transparent;
     border-radius: 50px;
     height: 60px;
+    cursor: pointer;
 }
 
-textarea{
+textarea {
     min-width: 90%;
     max-width: 90%;
     min-height: 170px;
@@ -124,10 +126,11 @@ textarea{
     margin-top: 1%;
     padding-right: 1%;
     font-size: 17px;
+    padding-top: 1%;
 
 }
 
-form p{
+form p {
     display: flex;
     align-self: flex-start;
     font-size: 15px;
@@ -136,14 +139,14 @@ form p{
 
 }
 
-form div{
+form div {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-form div div{
+form div div {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -151,13 +154,13 @@ form div div{
     padding-top: 3%;
 }
 
-form div img{
+form div img {
     position: absolute;
     width: 60px;
     height: 60px;
 }
 
-form input{
+form input {
     width: 90%;
     height: 40px;
     font-size: 17px;
@@ -166,7 +169,7 @@ form input{
     margin-top: 1%;
 }
 
-form label{
+form label {
     font-size: 20px;
     color: var(--text-color);
     font-weight: 600;
@@ -200,4 +203,3 @@ form label{
     opacity: 1;
     transition: opacity 0.5s ease-in;
 }
-
