@@ -65,6 +65,7 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    font-weight: 600;
 }
 
 .top-menu .menu ul li #option::before {
@@ -93,6 +94,7 @@
     border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .top-menu .menu ul li button:hover {
