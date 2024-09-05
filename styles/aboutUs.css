@@ -38,7 +38,7 @@ main {
 .first-info .text {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 73%;
     height: max-content;
     padding-left: 5%;
     padding-bottom: 5%;

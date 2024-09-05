@@ -18,6 +18,7 @@
     width: 25%;
     align-items: center;
     justify-content: space-evenly;
+    cursor: pointer;
     transition: 0.5s;
     transform: scale(0.9);
 }
