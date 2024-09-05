@@ -122,6 +122,10 @@
 
     .top-menu .logo {
         justify-content: center;
+    }
+
+    .top-menu .logo #logo{
+        margin-left: 10%;
 
     }
 
