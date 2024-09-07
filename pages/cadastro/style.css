@@ -247,7 +247,7 @@ form label {
         width: 90%;
     }
 
-    ;
-
-
+    .button-save input[type="submit"] {
+        margin-bottom: 20%;
+    }
 }
