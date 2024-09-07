@@ -3,7 +3,7 @@ main {
     width: 100%;
     height: 100vh;
 
-    background: url("../public/images/png/home.png");
+    background: url("../../public/images/png/home.png");
     background-size: 100%;
     overflow: hidden;
 }
@@ -217,11 +217,11 @@ form label {
         margin-top: 5%;
     }
 
-    form p{
+    form p {
         width: 95%;
     }
 
-    .sub-field-row label{
+    .sub-field-row label {
         padding-left: 5%;
     }
 
@@ -232,7 +232,7 @@ form label {
     .img-dog {
         display: none;
     }
-    
+
     .register {
         width: 100%;
         flex-direction: column;
@@ -243,9 +243,11 @@ form label {
         padding: 0;
     }
 
-    .sub-field-row input{
+    .sub-field-row input {
         width: 90%;
-    };
-    
+    }
+
+    ;
+
 
 }
