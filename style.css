@@ -3,7 +3,7 @@ main {
     width: 100%;
     height: 100vh;
 
-    background: url("../public/images/png/home.png");
+    background: url("https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Paginas%2FHome%2Fhome.png?alt=media&token=8edf563f-b185-4b65-9596-dda4fe1d4f6f");
     background-size: 100%;
     overflow: hidden;
 }
