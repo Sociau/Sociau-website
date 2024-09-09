@@ -18,13 +18,13 @@ main {
 }
 
 .first-info {
-    background: url('../../public/images/png/imagem_principal_quem_somos.png');
+    background: url('https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Paginas%2FQuero%20ajudar%2Fimagem_principal_quem_somos.png?alt=media&token=71e4457b-8f6b-460b-81ae-61e1ea09b226');
     background-size: 100%;
     align-items: end;
 }
 
 .second-info {
-    background: url('../../public/images/png/paws.png') no-repeat bottom;
+    background: url('https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Paginas%2FQuero%20ajudar%2Fpaws.png?alt=media&token=a63d3eb2-a0e7-4a14-9270-2fdb46c1d404') no-repeat bottom;
     background-color: var(--main-color);
     flex-direction: column;
     background-size: 101%;
