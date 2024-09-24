@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sociau - Quero Ajudar</title>
+    <title>Sociau - Quem somos</title>
     <link rel="icon" role="img" href="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2FSociau_icon.svg?alt=media&token=ff0c834e-07b6-4a6b-9a42-1368846b08ab">
     <link rel="stylesheet" href="../../styles/root.css">
-    <link rel="stylesheet" href="../../styles/responsive.css">
     <link rel="stylesheet" href="../../styles/top-menu.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="top-menu" style="background-color: #8b95d1;">
-        <a class="logo" href="../../index.html">
+    <header class="top-menu">
+        <a class="logo" id="sociau_logo">
             <div class="logo-icon">
                 <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2FSociau_icon.svg?alt=media&token=ff0c834e-07b6-4a6b-9a42-1368846b08ab" alt="">
             </div>
@@ -19,6 +19,7 @@
         </a>
         <section class="menu">
             <ul id="menu-list">
+                <li id="back"><a id="option" href="../../index.html">Voltar ao início</a></li>
                 <li><a id="option" href="../quemSomos/index.html">Quem Somos</a></li>
                 <li><a id="option" href="../queroAjudar/index.html">Quero Ajudar</a></li>
                 <li><a id="option" href="../contato/index.html">Contato</a></li>
@@ -30,13 +31,45 @@
             </ul>
         </section>
     </header>
-    <main style="margin-top: 78px;">
-        <h1>Quem somos</h1>
+    <main>
+        <section class="top">
+            <div class="content">
+                <h1>MUITO MAIS QUE UM SITE DE ADOÇÃO,<br><span>CONECTAMOS CORAÇÕES!</span></h1>
+                <p>Somos uma ponte entre ONGs de adoção e pessoas que querem fazer a diferença. Venha conectar corações e lares com a gente!</p>
+                <button>Venha fazer parte</button>
+                <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Paginas%2FQuem%20somos%2Fgato.png?alt=media&token=639f06c3-8cbb-4137-bc3e-5d2c304b39ec" alt="">
+            </div>
+        </section>
+        <section class="middle">
+            <div class="left-middle">
+                <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Paginas%2FQuem%20somos%2Fcachorro.png?alt=media&token=db2e5bbe-50cd-42fd-97dd-0d2507d68222" alt="">
+            </div>
+            <div class="right-middle">
+                <h2>AMAMOS ANIMAIS E<br><span>ACREDITAMOS EM FINAIS FELIZES.</span></h2>
+                <p>No SOCIAU, cada adoção é um novo começo. Acreditamos que todos os animais merecem amor e segurança. Nossa equipe trabalha incansavelmente para garantir que cada um encontre um lar feliz. Seja parte dessa missão de amor!</p>
+            </div>
+        </section>
+        <section class="bottom">
+            <div class="left-bottom">
+                <p>Conheça nossas<br><span>REDES<br>Sociais</span></p>
+            </div>
+            <div class="right-bottom">
+                <div>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Paginas%2FQuem%20somos%2F%C3%8DCONE_INSTAGRAM%20(1)%201.png?alt=media&token=0474ffca-d80d-4bdc-b65d-70b97eada44d" alt="">
+                    <p>@SOCIAU</p>
+                </div>
+                <div>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Paginas%2FQuem%20somos%2F%C3%8DCONE_ZAPZAP%20(1)%201.png?alt=media&token=250312b3-c358-4365-ae85-3ef8e44556aa" alt="">
+                    <p>(83) 99999-9999</p>
+                </div>
+            </div>
+        </section>
+       
     </main>
     <script>
         document.getElementById('sociau_logo').addEventListener('click', function () {
     
-            if (window.innerWidth < 768) {
+            if (window.innerWidth < 821) {
                 var ul = document.getElementById('menu-list');
                 ul.style.display = ul.style.display === 'flex' ? 'none' : 'flex';
             } else {
