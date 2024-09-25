@@ -25,14 +25,14 @@ main {
 
 .second-info {
     background: url('https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Paginas%2FQuero%20ajudar%2Fpaws.png?alt=media&token=a63d3eb2-a0e7-4a14-9270-2fdb46c1d404') no-repeat bottom;
-    background-color: var(--main-color);
+    background-color: var(--text-color);
     flex-direction: column;
     background-size: 101%;
     height: 120vh;
 }
 
 .third-info {
-    background: var(--third-color);
+    background: var(--main-color);
 }
 
 .first-info .text {
