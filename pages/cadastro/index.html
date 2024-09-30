@@ -24,14 +24,14 @@
                 <p>CADASTRO</p>
             </div>
             <div class="form-register">
-                <form action="#">
+                <form action="#" id="registerForm">
                     <div class="your-name">
                         <div class="no-icon">
                             <label for="yourname">
                                 Seu nome*
                             </label>
                         </div>
-                        <input type="text" name="yourname" id="yourname">
+                        <input type="text" name="yourname" id="yourname" minlength="5"  >
                     </div>
 
                     <div class="surname">
@@ -40,7 +40,7 @@
                                 Apelido*
                             </label>
                         </div>
-                        <input type="text" name="surname" id="surname">
+                        <input type="text" name="surname" id="surname" minlength="5">
                         <p>Seu apelido será o seu login.</p>
                     </div>
                     
@@ -50,7 +50,7 @@
                                 Email*
                             </label>
                         </div>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" minlength="8">
                         <p>Coloque um email ativo para receber informações sobre a adoção ou documentações.</p>
                     </div>
 
@@ -70,7 +70,7 @@
                                 WhatsApp*
                             </label>
                         </div>
-                        <input type="text" name="whatsapp" id="whatsapp">
+                        <input type="text" name="whatsapp" id="whatsapp" minlength="1">
                     </div>
 
                     <div class="second-whatsapp">
@@ -109,7 +109,7 @@
                                         Rua*
                                     </label>
                                 </div>
-                                <input type="text" name="street" id="street">
+                                <input type="text" name="street" id="street" placeholder="Nome da Rua, número">
                             </div>
                             <div class="neighborhood">
                                 <div class="no-icon">
@@ -117,7 +117,7 @@
                                         Bairro*
                                     </label>
                                 </div>
-                                <input type="text" name="city" id="city">
+                                <input type="text" name="city" id="neighborhood">
                             </div>
                         </div>
 
@@ -128,7 +128,7 @@
                                         Senha*
                                     </label>  
                                 </div>
-                                <input type="password" name="password" id="password">
+                                <input type="password" name="password" id="password" minlength="5" maxlength="10">
                             </div>
                             <div class="confirm-password">
                                 <div class="no-icon">
@@ -150,7 +150,7 @@
                     </div>
 
                     <div class="button-save">
-                        <input type="submit" value="Salvar">
+                        <input type="submit" value="Salvar" disabled id="register-btn">
                     </div>
                 </form>
             </div>
@@ -159,5 +159,6 @@
             <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Paginas%2FCadastro%2FImagem%20cachorro.png?alt=media&token=dc82712a-d45f-4992-87ac-3ef21783bf84" alt="Cachorro olhando a tela">
         </section>
     </main>
+    <script src="./script.js" type="module"></script>
 </body>
 </html>
