@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sociau - Login</title>
-    <link rel="icon" role="img" href="../../public/images/svg/Sociau_icon.svg">
+    <link rel="icon" role="img" href="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2FSociau_icon.svg?alt=media&token=ff0c834e-07b6-4a6b-9a42-1368846b08ab">
     <link rel="stylesheet" href="../../styles/root.css">
     <link rel="stylesheet" href="../../styles/top-menu.css">
     <link rel="stylesheet" href="./style.css">
@@ -27,7 +27,7 @@
                 <p>LOGIN</p>
             </div>
             <div class="login-form">
-                <form action="#">
+                <form action="#" id="loginForm">
                     <div class="username"> 
                         <input type="text" name="username" id="username" placeholder="Usuário"> 
                         <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2Ficon-user.svg?alt=media&token=508ba402-1cf9-45a1-a073-cc9e72c64b7d" alt="Icone de Usuário">
@@ -36,14 +36,15 @@
                         <input type="password" name="userpassword" id="userpassword" placeholder="Senha">
                         <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2Ficon-password.svg?alt=media&token=940c8349-deb8-488d-9d84-b16fa55f8c6e" alt="Icone de senha">
                     </div>
-                    <span><a href="#">Esqueci minha senha</a></span>
+                    <span><a href="../esqueciSenha/index.html">Esqueci minha senha</a></span>
                     <input type="submit" name="login" id="login-btn" value="Entrar">
                 </form>
             </div>
             <div class="register-btn">
-                <span>Não tem uma conta? <a href="../cadastro/index.html">Cadastre-se</a> </span>
+                <span>Não tem uma conta? <a href="../cadastro/index.html">Cadastre-se</a></span>
             </div>
         </section>
     </main>
+    <script src="./script.js" type="module"></script>
 </body>
 </html>
