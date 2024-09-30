@@ -6,19 +6,20 @@
     <title>Sociau - Contato</title>
     <link rel="icon" role="img" href="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2FSociau_icon.svg?alt=media&token=ff0c834e-07b6-4a6b-9a42-1368846b08ab">
     <link rel="stylesheet" href="../../styles/root.css">
-    <link rel="stylesheet" href="../../styles/responsive.css">
     <link rel="stylesheet" href="../../styles/top-menu.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header class="top-menu" style="background-color: #8b95d1;">
-        <a class="logo" href="../../index.html">
+        <a class="logo" id="sociau_logo">
             <div class="logo-icon">
                 <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2FSociau_icon.svg?alt=media&token=ff0c834e-07b6-4a6b-9a42-1368846b08ab" alt="">
             </div>
             <img id="logo" src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2Fsociau_logo.png?alt=media&token=bce72623-50cd-4d5a-8525-bdb37cc1cfc7" alt="">
         </a>
-        <section class="menu">
+        <nav class="menu">
             <ul id="menu-list">
+                <li id="back"><a id="option" href="../../index.html">Voltar ao início</a></li>
                 <li><a id="option" href="../quemSomos/index.html">Quem Somos</a></li>
                 <li><a id="option" href="../queroAjudar/index.html">Quero Ajudar</a></li>
                 <li><a id="option" href="../contato/index.html">Contato</a></li>
@@ -28,10 +29,34 @@
                     </a>
                 </li>
             </ul>
-        </section>
+        </nav>
     </header>
-    <main style="margin-top: 78px;">
-        <h1>Contato</h1>
+    <main>
+        <nav class="text-info">
+            <div class="text">
+                <p>Como você prefere falar com a gente?</p>
+            </div>
+        </nav>
+
+        <nav class="contact-options">
+            <div class="email">
+                <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2Femail_contato.svg?alt=media&token=0a86fbb2-08a2-4ff3-9219-4b797c07071b">
+                <h2>E-mail</h2>
+                <p>Tem alguma dúvida?</p>
+            </div>
+        
+            <div class="cell-phone">
+                <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2Ftelefone_contato.svg?alt=media&token=63f33b83-62a3-4020-a862-5f591f88e892">
+                <h2>Telefone</h2>
+                <p>Você pode ligar a qualquer hora.</p>
+            </div>
+        
+            <div class="chat">
+                <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2Fchat_contato.svg?alt=media&token=5e4a9dcc-87e1-4d62-b4c7-3467f4a294d3">
+                <h2>Chat</h2>
+                <p>Precisa de alguma ajuda agora?</p>
+            </div>
+        </nav>
     </main>
     <script>
         document.getElementById('sociau_logo').addEventListener('click', function () {
