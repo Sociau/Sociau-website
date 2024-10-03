@@ -8,13 +8,13 @@ form.addEventListener('submit', async function(event) {
     const username = document.getElementById('username').value;
     const password = document.getElementById('userpassword').value;
 
-    console.log(username, password);
-
     const data = await login(username, password);
 
-    console.log(data);
-
     if(data.status == 404){
-      console.log('Não achou')
+      alert('Não achou')
+    }
+
+    if(data.status == 200){
+      window.location.href = '../../index.html';
     }
 });

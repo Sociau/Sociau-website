@@ -8,8 +8,11 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 1%;
-    overflow: hidden;
     z-index: 1000;
+}
+
+a{
+    text-decoration: none;
 }
 
 .top-menu .logo {
@@ -52,7 +55,7 @@
     width: 65%;
 }
 
-.top-menu .menu ul {
+.top-menu .menu #menu-list {
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -107,6 +110,70 @@
     display: none;
 }
 
+.logged-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 246px;
+    height: 48px;
+    background-color: var(--buttons-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.logged-menu p{
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 5%;
+}
+
+.logged-menu img{
+    width: 36px;
+    height: 36px;
+}
+
+.logged-menu ul{
+    background-color: var(--text-color);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 90%;
+    align-items: start;
+    list-style: none;
+    border-radius: 10px;
+    width: 246px;
+    font-weight: 600;
+    display: none;
+}
+
+.logged-menu ul li{
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
+    width: 92%;
+    text-align: center;
+}
+
+.logged-menu ul a{
+    text-decoration: none;
+    align-self: flex-start;
+    color: black;
+}
+
+.logged-menu ul li:nth-child(5), .logged-menu ul li:nth-child(3){
+    border-top: 1px solid black;
+}
+
+.logged-menu ul li:nth-child(3) a, .logged-menu ul li:nth-child(4) a{
+    color: var(--third-color);
+}
+
+.logged-menu ul li:nth-child(1) a, .logged-menu ul li:nth-child(2) a{
+    color: var(--buttons-color);
+}
+
 @media screen and (max-width: 820px) {
 
     #back{
@@ -148,5 +215,24 @@
     .top-menu .menu ul li #option:hover::before {
         width: 0;
         left: 50%;
+    }
+
+    .logged-menu ul{
+        top: 93%;
+    }
+
+    .logged-menu ul li{
+        width: 98%;
+        height: 35px;
+    }
+
+
+    .logged-menu ul li:nth-child(5), .logged-menu ul li:nth-child(3){
+        border-top: 1px solid black;
+        padding-top: 5%;
+    }
+
+    .logged-menu ul li:nth-child(1){
+        padding-top: 5%;
     }
 }
