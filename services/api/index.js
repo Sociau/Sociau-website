@@ -75,4 +75,16 @@ const getUser = () => {
   return user ? JSON.parse(user) : null
 }
 
-export { login, createAccount, getToken, getUser, logout }
+const getPets = async (filter) => {
+  try {
+    const response = await fetch(`${config.BASE_URL}pets?${filter ? filter : ''}`, {
+      method: 'GET',
+    })
+    const data = await response.json()
+    return data
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+export { login, createAccount, getToken, getUser, logout, getPets }
