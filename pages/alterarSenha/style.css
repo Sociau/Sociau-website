@@ -16,11 +16,13 @@ main {
 }
 
 .img-container img {
-    width: 80%;
+    width: 22%;
     position: absolute;
+    margin-left: 28.2%;
+    bottom: 0;
 }
 
-.forgotPassword-container {
+.changePassword-container {
     width: 50%;
     height: 100%;
     background-color: var(--third-color);
@@ -30,15 +32,14 @@ main {
     padding-top: 15%;
 }
 
-.forgotPassword-container .forgotPassword-title p {
+.changePassword-container .changePassword-title p {
     font-weight: 600;
     font-size: 40px;
     color: var(--text-color);
     margin-bottom: 2%;
 }
 
-
-.forgotPassword-container .forgotPassword-form form {
+.changePassword-container .changePassword-form form {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -46,37 +47,27 @@ main {
     justify-content: center;
 }
 
-
-.forgotPassword-container .forgotPassword-form form .email {
+.changePassword-container .changePassword-form form .newPassword {
     display: flex;
     width: 70%;
     align-items: center;
     justify-content: center;
 }
 
-.forgotPassword-container .forgotPassword-form form .email input {
+.changePassword-container .changePassword-form form .newPassword input {
     height: 75px;
     padding-right: 8.5%;
     padding-left: 3%;
 }
 
-
-.forgotPassword-container .forgotPassword-form {
+.changePassword-container .changePassword-form {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-.forgotPassword-container .forgotPassword-form img {
-    width: 50px;
-    position: absolute;
-    margin-left: 24%;
-}
-
-
-.forgotPassword-container .forgotPassword-form input {
+.changePassword-container .changePassword-form input {
     width: 70%;
     height: 60px;
     font-size: 20px;
@@ -85,12 +76,12 @@ main {
     margin-bottom: 2.5%;
 }
 
-.forgotPassword-form input[type="email"]::placeholder {
+.changePassword-form input[type="password"]::placeholder {
     font-weight: bold;
     font-size: 20px;
 }
 
-.forgotPassword-container .forgotPassword-form input[type="submit"] {
+.changePassword-container .changePassword-form input[type="submit"] {
     width: 50%;
     height: 70px;
     font-weight: 600;
@@ -103,47 +94,9 @@ main {
     box-shadow: none;
 }
 
-
-.forgotPassword-container .options {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3%;
-    align-items: center;
-}
-
-.forgotPassword-container .options a {
-    font-weight: 600;
-    font-size: 26px;
-    color: var(--text-color);
-    margin-bottom: 2%;
-    text-decoration: none;
-}
-
-
-.forgotPassword-container .forgotPassword-form input[type="submit"]:hover {
+.changePassword-container .changePassword-form input[type="submit"]:hover {
     transition: 0.5s ease;
     box-shadow: 2px 2px 10px var(--main-color);
-}
-
-
-.top-menu {
-    justify-content: start;
-    width: 49%;
-}
-
-.top-menu .logo {
-    justify-content: start;
-}
-
-.top-menu .logo #logo {
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
-    margin-left: 5%;
-}
-
-.top-menu .logo:hover #logo {
-    opacity: 1;
-    transition: opacity 0.5s ease-in;
 }
 
 
@@ -175,27 +128,27 @@ main {
         display: none;
     }
 
-    .forgotPassword-container {
+    .changePassword-container {
         width: 100%;
         padding-top: 30%;
     }
 
-    .forgotPassword-container .forgotPassword-title p {
+    .changePassword-container .changePassword-title p {
         margin-top: 15%;
         ;
         font-size: 35px;
     }
 
 
-    .forgotPassword-container .forgotPassword-form form {
+    .changePassword-container .changePassword-form form {
         width: 90%;
     }
 
-    .forgotPassword-container .forgotPassword-form form .email {
+    .changePassword-container .changePassword-form form .newPassword {
         width: 100%;
     }
 
-    .forgotPassword-container .forgotPassword-form form .email input {
+    .changePassword-container .changePassword-form form .newPassword input {
         height: 50px;
         width: 100%;
         padding-right: 15%;
@@ -205,21 +158,43 @@ main {
     }
 
 
-    .forgotPassword-container .forgotPassword-form input[type="submit"] {
+    .changePassword-container .changePassword-form input[type="submit"] {
         height: 55px;
         width: 80%;
         margin-bottom: 5%;
     }
+}
 
-    .forgotPassword-container .forgotPassword-form img {
-        width: 10%;
-        margin-left: 75%;
-        margin-top: 1.5%;
-    }
 
-    .forgotPassword-container .options a {
-        font-size: 20px;
-        margin-bottom: 5%;
-    }
 
+
+
+
+
+
+
+
+
+
+
+
+
+.top-menu {
+    justify-content: start;
+    width: 49%;
+}
+
+.top-menu .logo {
+    justify-content: start;
+}
+
+.top-menu .logo #logo {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    margin-left: 5%;
+}
+
+.top-menu .logo:hover #logo {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
 }
