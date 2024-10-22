@@ -16,7 +16,8 @@ const login = async (nickname, password) => {
     const data = await response.json()
     if (data.token) {
       localStorage.setItem('token', data.token)
-      localStorage.setItem('user', JSON.stringify(data.user))
+      localStorage.setItem('user', JSON.stringify(data.person))
+      localStorage.setItem('address', JSON.stringify(data.address))
     }
     return data
   } catch (error) {
@@ -74,4 +75,41 @@ const getUser = () => {
   return user ? JSON.parse(user) : null
 }
 
-export { login, createAccount, getToken, getUser, logout }
+const getPets = async (filter) => {
+  try {
+    const response = await fetch(`${config.BASE_URL}pets?${filter ? filter : ''}`, {
+      method: 'GET',
+    })
+    const data = await response.json()
+    return data
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+const getPetById = async (id) => {
+  try {
+    const response = await fetch(`${config.BASE_URL}pets/${id}`, {
+      method: 'GET',
+    })
+    const data = await response.json()
+    return data
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+const getAdoptionHistory = async () => {
+  try {
+    const user_id = JSON.parse(localStorage.getItem("user")).id
+    const response = await fetch(`${config.BASE_URL}adoption/${user_id}`, {
+      method: 'GET',
+    })
+    const data = await response.json()
+    return data
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+export { login, createAccount, getToken, getUser, logout, getPets, getAdoptionHistory, getPetById }

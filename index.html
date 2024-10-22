@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header class="top-menu">
+    <header class="top-menu" style="background-color: #8b95d1;">
         <a class="logo" id="sociau_logo">
             <div class="logo-icon">
                 <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2FSociau_icon.svg?alt=media&token=ff0c834e-07b6-4a6b-9a42-1368846b08ab"
@@ -70,19 +70,38 @@
         </nav>
     </header>
     <main>
-        <div class="home-text">
-            <p>Seja bem vindo<br>ao Sociau!</p>
-            <div class="text">
-                <p>Conheça seu futuro melhor amigo!</p>
-            </div>
-        </div>
-        <div class="pets">
-            <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Paginas%2FHome%2Fdog_cat.png?alt=media&token=691ebe8f-16f6-49fc-a4ed-3f8376e46181"
-                alt="">
-        </div>
+        <section class="top"></section>
+        <section class="data-canva">
+            <h1>Veja como é <span>FÁCIL</span> adotar</h1>
+            <section class="filters">
+                <select name="state" id="state">
+                    <option value="default">Estado</option>
+                </select>
+                <select name="city" id="city">
+                    <option value="default">Cidade</option>
+                </select>
+                <select name="species" id="species">
+                    <option value="default">Espécie</option>
+                </select>
+                <select name="gender" id="gender">
+                    <option value="default">Sexo</option>
+                </select>
+                <select name="size" id="size">
+                    <option value="default">Porte</option>
+                </select>
+            </section>
+            <section class="search">
+                <input type="text" name="search" id="search" placeholder="Nome do animal">
+                <button id="search-btn">Buscar</button>
+            </section>
+            <section class="animals" id="pets">
+                
+            </section>
+        </section>
     </main>
     <script src="./scripts/top-menu.js" type="module"></script>
     <script src="./scripts/index-top-menu.js" type="module"></script>
+    <script src="./scripts/home.js" type="module"></script>
 </body>
 
 </html>

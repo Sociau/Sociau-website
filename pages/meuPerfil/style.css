@@ -1,0 +1,228 @@
+.top-menu {
+    position: relative;
+}
+
+.blurred-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    overflow: scroll;
+    background-color: #8b95d1;
+    align-items: center;
+}
+
+.user-data {
+    width: 90%;
+    display: flex;
+    margin-top: 5%;
+}
+
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-color: var(--third-color);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    width: 70%;
+}
+
+.user-info h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--third-color);
+}
+
+.user-info p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #525252;
+}
+
+.buttons {
+    display: flex;
+    width: max-content;
+    margin-top: 3%;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.buttons button {
+    width: max-content;
+    height: 8vh;
+    border: 1px solid var(--third-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    cursor: pointer;
+    background-color: var(--third-color);
+}
+
+button#contacts-btn {
+    background-color: var(--text-color);
+    color: var(--third-color);
+    margin-right: 5%;
+}
+
+.user-animals {
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.no-animals {
+    width: 100%;
+    background-color: #3949ae80;
+    height: 20vh;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 5%;
+    display: none;
+}
+
+.animals {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 7%;
+    align-items: center;
+    justify-content: center;
+}
+
+.animals .animal {
+    width: 250px;
+    height: 267px;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    background-color: var(--text-color);
+    border-radius: 10px;
+}
+
+.animal img {
+    width: 250px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.animal .text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+}
+
+.animal .text h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    padding-top: 1%;
+    padding-left: 2%;
+}
+
+.animal .text p {
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    padding-left: 2%;
+}
+
+.modal-contact {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 40vh;
+    background-color: #8b95d1;
+    z-index: 9999;
+    margin-top: 10%;
+    border-radius: 15px;
+    display: none;
+}
+
+.modal-contact .image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-contact .details {
+    width: 50%;
+}
+
+.modal-contact .image img {
+    width: 200px;
+    height: 200px;
+}
+
+.modal-contact .details {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-contact .details div {
+    display: flex;
+    align-items: center;
+    margin: 3%;
+}
+
+.modal-contact .details div p {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.modal-contact .details div .image-details {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-contact .details div:nth-child(1) img {
+    width: 45px;
+    height: 30px;
+}
+
+.modal-contact .details div:nth-child(2) img {
+    width: 30px;
+    height: 30px;
+}
