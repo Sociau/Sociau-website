@@ -46,10 +46,9 @@ const createAccount = async (person) => {
       formData.append('number', person.address.number);
     }
 
-    if (avatarFile) {
-      formData.append('avatar', avatarFile);
+    if (person.avatarFile) {
+      formData.append('avatar', person.avatarFile);
     }
-
     const response = await fetch(`${config.BASE_URL}create_account`, {
       method: 'POST',
       body: formData,
