@@ -167,7 +167,7 @@ button#contacts-btn {
 .modal-contact {
     position: absolute;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 50%;
     height: 40vh;
@@ -179,14 +179,11 @@ button#contacts-btn {
 }
 
 .modal-contact .image {
-    width: 50%;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.modal-contact .details {
-    width: 50%;
+    margin: 1%;
 }
 
 .modal-contact .image img {
@@ -197,12 +194,13 @@ button#contacts-btn {
 .modal-contact .details {
     display: flex;
     flex-direction: column;
+    width: 70%;
 }
 
 .modal-contact .details div {
     display: flex;
     align-items: center;
-    margin: 3%;
+    margin: 2%;
 }
 
 .modal-contact .details div p {
@@ -212,7 +210,7 @@ button#contacts-btn {
 
 .modal-contact .details div .image-details {
     display: flex;
-    width: 20%;
+    width: 10%;
     align-items: center;
     justify-content: center;
 }
