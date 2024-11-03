@@ -39,7 +39,6 @@ main {
     width: 250px;
     height: 250px;
     border-radius: 100%;
-    background-color: var(--third-color);
 }
 
 .user-info {
