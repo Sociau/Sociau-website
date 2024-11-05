@@ -4,10 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sociau - Meu perfil</title>
+    <link rel="icon" role="img"
+        href="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2FSociau_icon.svg?alt=media&token=ff0c834e-07b6-4a6b-9a42-1368846b08ab">
+    <link rel="stylesheet" href="../../styles/root.css">
+    <link rel="stylesheet" href="../../styles/top-menu.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <header class="top-menu" style="background-color: #8b95d1;">
+        <a class="logo" id="sociau_logo">
+            <div class="logo-icon">
+                <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2FSociau_icon.svg?alt=media&token=ff0c834e-07b6-4a6b-9a42-1368846b08ab"
+                    alt="">
+            </div>
+            <img id="logo"
+                src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2Fsociau_logo.png?alt=media&token=bce72623-50cd-4d5a-8525-bdb37cc1cfc7"
+                alt="">
+        </a>
+        <nav class="menu">
+            <ul id="menu-list">
+                <li id="back"><a id="option" href="../../index.html">Voltar ao início</a></li>
+                <li><a id="option" href="../quemSomos/index.html">Quem Somos</a></li>
+                <li><a id="option" href="../queroAjudar/index.html">Quero Ajudar</a></li>
+                <li><a id="option" href="../contato/index.html">Contato</a></li>
+                <li id="login-btn-option">
+                    <div class="logged-menu" id="on-logged">
+                        <p>Olá, aumigo</p>
+                        <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2FVector.png?alt=media&token=3b68bf1c-4d02-4b23-8183-925d9d56339c"
+                            alt="">
+                        <ul id="logged-options">
+                            <li>
+                                <a href="../novoAnimal/index.html">
+                                    Cadastrar novo animal
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../meuPerfil/index.html">
+                                    Meu perfil / animais
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../editarPerfil/index.html">
+                                    Editar perfil
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../alterarSenha/index.html">
+                                    Alterar senha
+                                </a>
+                            </li>
+                            <li>
+                                <a id="logout-btn">
+                                    Sair
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="../login/index.html" id="login-btn">
+                        <button class="button-login">Login/Cadastre-se</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <h1>Meu perfil</h1>
+        <section class="blurred-overlay" id="blurred">
+            
+        </section>
+        <section class="user-data" id="user-data">
+            <div class="profile-picture">
+                <img id="profile-picture" src="" alt="">
+            </div>
+            <div class="user-info">
+                <h1 class="user-name"></h1>
+                <p class="user-address"></p>
+                <div class="buttons">
+                    <button id="contacts-btn">Contatos</button>
+                    <a href="../novoAnimal/index.html">
+                        <button>Cadastrar novo animal</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="user-animals" id="user-animals">
+            <div class="no-animals" id="no-animals">
+                <h1>Este usuário não possuí nenhum bichinho disponível para adoção...</h1>
+            </div>
+            <section class="animals" id="pets">
+                
+            </section>
+        </section>
+        <section class="modal-contact" id="modal-contact">
+            <div class="image">
+                <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Paginas%2Fmodal-contato%2FImagem.png?alt=media&token=6864b5b1-8984-4d19-a18c-5213e6bab0c5" alt="">
+
+            </div>
+            <div class="details">
+                <div class="email">
+                    <div class="image-details">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Paginas%2Fmodal-contato%2Femail%402x.png?alt=media&token=cfcaf376-ff2f-44b8-95c5-52a046d90a93" alt="">
+                    </div>
+                    <p id="email"></p>
+                </div>
+                <div class="whatsapp">
+                    <div class="image-details">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Paginas%2Fmodal-contato%2FIcone%20whats.png?alt=media&token=ada8c662-dd3e-4f8d-a3fc-3f67b114a273" alt="">
+                    </div>
+                    <p id="whatsapp"></p>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="../../scripts/top-menu.js" type="module"></script>
+    <script>
+        document.getElementById('sociau_logo').addEventListener('click', function () {
+
+            if (window.innerWidth < 821) {
+                var ul = document.getElementById('menu-list');
+                ul.style.display = ul.style.display === 'flex' ? 'none' : 'flex';
+            } else {
+                window.location.href = '../../index.html';
+            }
+        });
+    </script>
+    <script src="./script.js" type="module"></script>
 </body>
 </html>
