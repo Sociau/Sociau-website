@@ -64,7 +64,7 @@ const petsList = async () => {
 
     await pets.pets.forEach(pet => {
         document.getElementById('pets').innerHTML += `
-            <a href="./pages/perfilAnimal/index.html?id=${pet.id}" class="animal">
+            <a href="./pages/animalPerfil/index.html?id=${pet.id}" class="animal">
                 <img src="${pet.main_photo}" alt="">
                 <div class="text">
                     <h1>${pet.name}</h1>
@@ -120,7 +120,7 @@ const filterPets = async () => {
     if (pets.pets.length > 0) {
         await pets.pets.forEach(pet => {
             document.getElementById('pets').innerHTML += `
-                <a href="./pages/perfilAnimal/index.html?id=${pet.id}" class="animal">
+                <a href="./pages/animalPerfil/index.html?id=${pet.id}" class="animal">
                     <img src="${pet.main_photo}" alt="">
                     <div class="text">
                         <h1>${pet.name}</h1>
