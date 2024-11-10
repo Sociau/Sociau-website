@@ -1,0 +1,182 @@
+.top-menu {
+    background-color: var(--third-color);
+}
+
+main {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    scroll-behavior: smooth;
+    background-color: var(--main-color);
+
+}
+
+h1,
+h3 {
+    color: var(--third-color);
+
+}
+
+.sectionAnimal {
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
+
+.sectionAnimal .containerImg {
+    margin-top: 15%;
+    width: 60%;
+    display: flex;
+    height: 75%;
+}
+
+.sectionAnimal .containerImg img {
+    width: 100%;
+}
+
+.sectionInfo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 4%;
+}
+
+
+.apresentationName {
+    margin-top: 15%;
+}
+
+.shortApresentation {
+    margin-top: 1%;
+}
+
+.shortApresentation .labelsApresentation {
+    margin-top: 1%;
+}
+
+.labelsApresentation {
+    color: white;
+    font-weight: 600;
+}
+
+.aboutMe {
+    margin-top: 3%;
+}
+
+.aboutMe p {
+    margin-top: 2%;
+    color: white;
+    font-weight: 600;
+}
+
+.location {
+    margin-top: 3%;
+    color: white;
+    font-weight: 600;
+}
+
+.location .city {
+    margin-bottom: 1%;
+
+}
+
+.location .publicacao span {
+    color: var(--third-color);
+}
+
+.behavior {
+    margin-top: 3%;
+}
+
+.behavior .labels {
+    margin-top: 1%;
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.behavior .labels p {
+    display: flex;
+    margin-right: 5%;
+    margin-top: 2%;
+    font-weight: 600;
+    color: var(--third-color);
+    background-color: var(--second-color);
+    padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 10px;
+}
+
+.meDouBem {
+    margin-top: 3%;
+}
+
+.meDouBem .labels {
+    margin-top: 1%;
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.meDouBem .labels p {
+    display: flex;
+    margin-right: 5%;
+    margin-top: 2%;
+    font-weight: 600;
+    color: var(--third-color);
+    background-color: var(--second-color);
+    padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 10px;
+}
+
+.cuidadosVeterinarios {
+    margin-top: 3%;
+}
+
+.cuidadosVeterinarios .labels {
+    margin-top: 1%;
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.cuidadosVeterinarios .labels p {
+    display: flex;
+    margin-right: 5%;
+    margin-top: 2%;
+    font-weight: 600;
+    color: var(--third-color);
+    background-color: var(--second-color);
+    padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 10px;
+}
+
+.button {
+    margin-top: 5%;
+}
+
+.button button {
+    color: white;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    background-color: var(--buttons-color);
+    border: 0;
+    border-radius: 20px;
+    width: 50%;
+    height: 77px;
+    cursor: pointer;
+}
+
+
+.button button:hover {
+    transition: 0.5s;
+    background-color: #e67a16;
+}
