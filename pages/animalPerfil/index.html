@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociau - Quem somos</title>
+    <link rel="icon" role="img"
+        href="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2FSociau_icon.svg?alt=media&token=ff0c834e-07b6-4a6b-9a42-1368846b08ab">
+    <link rel="stylesheet" href="../../styles/root.css">
+    <link rel="stylesheet" href="../../styles/top-menu.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="top-menu">
+        <a class="logo" id="sociau_logo">
+            <div class="logo-icon">
+                <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2FSociau_icon.svg?alt=media&token=ff0c834e-07b6-4a6b-9a42-1368846b08ab"
+                    alt="">
+            </div>
+            <img id="logo"
+                src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2Fsociau_logo.png?alt=media&token=bce72623-50cd-4d5a-8525-bdb37cc1cfc7"
+                alt="">
+        </a>
+        <nav class="menu">
+            <ul id="menu-list">
+                <li id="back"><a id="option" href="../../index.html">Voltar ao início</a></li>
+                <li><a id="option" href="../quemSomos/index.html">Quem Somos</a></li>
+                <li><a id="option" href="../queroAjudar/index.html">Quero Ajudar</a></li>
+                <li><a id="option" href="../contato/index.html">Contato</a></li>
+                <li id="login-btn-option">
+                    <div class="logged-menu" id="on-logged">
+                        <p>Olá, aumigo</p>
+                        <img src="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2FVector.png?alt=media&token=3b68bf1c-4d02-4b23-8183-925d9d56339c"
+                            alt="">
+                        <ul id="logged-options">
+                            <li>
+                                <a href="../novoAnimal/index.html">
+                                    Cadastrar novo animal
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../meuPerfil/index.html">
+                                    Meu perfil / animais
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../editarPerfil/index.html">
+                                    Editar perfil
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../alterarSenha/index.html">
+                                    Alterar senha
+                                </a>
+                            </li>
+                            <li>
+                                <a id="logout-btn">
+                                    Sair
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="../login/index.html" id="login-btn">
+                        <button class="button-login">Login/Cadastre-se</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="sectionAnimal">
+            <div class="containerImg">
+                <img src="" alt="" id="animalImg">
+            </div>
+        </section>
+        <section class="sectionInfo">
+
+            <div class="apresentationName">
+                <h1 id="catName"></h1>
+            </div>
+
+            <div class="shortApresentation">
+                <h3>Breve apresentação</h3>
+                <div class="labelsApresentation" id="labels">
+                    <p id="breed"></p>
+                    <p id="gender"></p>
+                    <p id="age"></p>
+                    <p id="size"></p>
+
+                </div>
+            </div>
+
+            <!--
+            <div class="aboutMe">
+                <h3>Sobre mim:</h3>
+                <p id="aboutMe"></p>
+            </div>
+            -->
+            
+
+            <div class="location">
+                <div class="city">
+                    <p>Estou em <span id="city"></span>, <span id="state"></span>.</p>
+                </div>
+                <div class="publicacao">
+                    <p>Publicado por <a href=""><span id="user"></span></a>.</p>
+                </div>
+            </div>
+
+            <!--
+            <div class="behavior">
+                <h3>Comportamento</h3>
+                <div class="labels" id="behaviorList"></div>
+            </div>
+
+            <div class="meDouBem">
+                <h3>Me dou bem com</h3>
+                <div class="labels" id="meDouBemList"></div>
+            </div>
+
+            <div class="cuidadosVeterinarios">
+                <h3>Cuidados Veterinarios</h3>
+                <div class="labels" id="cuidadosVeterinariosList"></div>
+            </div>
+            -->
+
+            
+
+            <div class="button">
+                <button class="queroAdotar">Quero adotar!</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script.js" type="module"></script>
+    <script src="../../scripts/top-menu.js" type="module"></script>
+    <script>
+        document.getElementById('sociau_logo').addEventListener('click', function () {
+
+            if (window.innerWidth < 821) {
+                var ul = document.getElementById('menu-list');
+                ul.style.display = ul.style.display === 'flex' ? 'none' : 'flex';
+            } else {
+                window.location.href = '../../index.html';
+            }
+        });
+    </script>
+</body>
+
+</html>

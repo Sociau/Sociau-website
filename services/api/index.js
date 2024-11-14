@@ -49,10 +49,6 @@ const createAccount = async (person) => {
     if (person.avatarFile) {
       formData.append('avatar', person.avatarFile);
     }
-<<<<<<< HEAD
-    console.log(config, formData);
-=======
->>>>>>> 501d88be49da3f511a2a8d0e2b2d54a03c356288
     const response = await fetch(`${config.BASE_URL}create_account`, {
       method: 'POST',
       body: formData,
@@ -91,6 +87,18 @@ const getPets = async (filter) => {
   }
 }
 
+const getUserById = async (id) => {
+  try {
+    const response = await fetch(`${config.BASE_URL}user/${id}`, {
+      method: 'GET',
+    })
+    const data = await response.json()
+    return data
+  } catch (error) {
+    console.log(error)
+  }
+}
+
 const getPetById = async (id) => {
   try {
     const response = await fetch(`${config.BASE_URL}pets/${id}`, {
@@ -103,10 +111,18 @@ const getPetById = async (id) => {
   }
 }
 
-const getAdoptionHistory = async () => {
+const getAdoptionHistory = async (pet_id) => {
   try {
-    const user_id = JSON.parse(localStorage.getItem("user")).id
-    const response = await fetch(`${config.BASE_URL}adoption/${user_id}`, {
+    let user_id = ""
+
+    if (localStorage.getItem("user")) {
+      user_id = JSON.parse(localStorage.getItem("user")).id
+    }
+
+    let query = `${config.BASE_URL}adoption?user_id=${user_id}`
+
+    if (pet_id) query = `${config.BASE_URL}adoption?pet_id=${pet_id}`
+    const response = await fetch(query, {
       method: 'GET',
     })
     const data = await response.json()
@@ -116,4 +132,4 @@ const getAdoptionHistory = async () => {
   }
 }
 
-export { login, createAccount, getToken, getUser, logout, getPets, getAdoptionHistory, getPetById }
+export { login, createAccount, getToken, getUser, getUserById, logout, getPets, getAdoptionHistory, getPetById }
