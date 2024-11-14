@@ -72,59 +72,101 @@
     <main class="main-container">
         <section class="profile-section">
             <form class="profile-form">
+
+                <div class="form-group">
+                    <label for="nome">Seu nome*</label>
+                    <input type="text" id="nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="apelido">Apelido*</label>
+                    <input type="text" id="apelido">
+                    <p>Seu apelido será seu login</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email">
+                    <p>Insira um e-mail ativo para receber informações sobre adoção e documentos</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="cor_email">Confirmação de email</label>
+                    <input type="email" id="cor_email">
+                    <p>Insira um e-mail ativo para receber informações sobre adoção e documentos</p>
+                </div>
+
                 <div class="form-group">
                     <label for="whatsapp">WhatsApp</label>
-                    <input type="text" id="whatsapp" placeholder="Digite seu número de WhatsApp">
-                    <div class="check">
-                        <input type="checkbox" id="whatsapp_visible">
-                        <label for="whatsapp_visible">Tornar o WhatsApp visível?</label>
+                    <input type="text" id="whatsapp">
+                </div>
+
+                <div class="form-group">
+                    <label for="whatsapp_sec">WhatsApp Secundário</label>
+                    <input type="text" id="whatsapp_sec">
+                </div>
+
+                <div class="img-form">
+                    <div class="form-group">
+                        <label for="profile_photo">Foto Principal</label>
+                        <input type="file" id="profile_photo">
                     </div>
+                    <img href="">
                 </div>
+                <div class="side-side">
+                    <div> 
+                        
+                        <div class="form-group" id="left">
+                            <label for="estado">Estado*</label>
+                            <select id="estado">
+                                <option>Paraíba</option>
+                                <option>Outro Estado</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group" id="right">
+                            <label for="cidade">Cidade*</label>
+                            <select id="cidade">
+                                <option value="" disabled selected hidden>Selecione sua cidade</option>
+                                <option>Malta</option>
+                                <option>Patos</option>
+                                <option>Santa Luzia</option>
+                            </select>
+                        </div>
+                    </div>
 
-                <div class="form-group">
-                    <label for="secondary_whatsapp">WhatsApp Secundário</label>
-                    <input type="text" id="secondary_whatsapp" placeholder="Digite outro número, se houver">
-                    <div class="check">
-                        <input type="checkbox" id="secondary_whatsapp_visible">
-                        <label for="secondary_whatsapp_visible">Tornar o WhatsApp secundário visível?</label>
-                    </div> 
-                </div>
+                    <div>
+                        <div class="form-group" id="left">
+                            <label for="rua">Rua*</label>
+                            <input type="text" id="rua">
+                        </div>
 
-                <div class="form-group">
-                    <label for="profile_photo">Foto Principal</label>
-                    <input type="file" id="profile_photo">
-                </div>
+                        <div class="form-group" id="right">
+                            <label for="Bairro">Bairro*</label>
+                            <input type="text" id="Bairro">
+                        </div>
+                    </div>
 
-                <div class="form-group">
-                    <label for="estado">Estado*</label>
-                    <select id="estado">
-                        <option>Paraíba</option>
-                        <option>Outro Estado</option>
-                    </select>
-                </div>
+                    <div>
+                        <div class="form-group" id="left">
+                            <label for="senha">Senha*</label>
+                            <input type="password" id="senha">
+                        </div>
 
-                <div class="form-group">
-                    <label for="cidade">Cidade*</label>
-                    <select id="cidade">
-                        <option value="" disabled selected hidden>Selecione sua cidade</option>
-                        <option>Malta</option>
-                        <option>Patos</option>
-                        <option>Santa Luzia</option>
-                    </select>
-                </div>
+                        <div class="form-group" id="right">
+                            <label for="con_senha">Confirmar Senha*</label>
+                            <input type="password" id="con_senha">
+                        </div>
+                    </div>
 
-                <div class="form-group">
-                    <label for="site">Site</label>
-                    <input type="text" id="site" placeholder="Se você faz parte de uma ONG, pode divulgar seu site">
                 </div>
 
                 <div class="form-group">
                     <label for="about">Sobre você</label>
-                    <textarea id="about" placeholder="Escreva sobre você..."></textarea>
+                    <textarea id="about"></textarea>
                 </div>
 
                 <button type="submit" class="save-button">Salvar</button>
-                <button type="button" class="delete-button">Remover conta</button>
             </form>
         </section>
     </main>
