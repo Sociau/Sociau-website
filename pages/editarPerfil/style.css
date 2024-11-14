@@ -19,10 +19,12 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
+    border-bottom: 1px solid var(--second-color);
 }
 
 .main-container {
     display: flex;
+    background-color: var(--main-color);
     justify-content: center;
     align-items: center;
     width: 100%;
