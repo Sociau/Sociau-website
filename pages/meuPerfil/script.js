@@ -6,7 +6,6 @@ window.document.addEventListener('DOMContentLoaded', async function () {
     if (avatar == null || avatar == "") {
         profilePicture.style.backgroundColor = '#3949ae';
     }
-    console.log(avatar)
     profilePicture.src = avatar
     document.getElementsByClassName('user-name')[0].innerText = JSON.parse(localStorage.getItem('user')).name;
     document.getElementsByClassName('user-address')[0].innerText = (JSON.parse(localStorage.getItem('address')).state).toUpperCase() + ', ' + JSON.parse(localStorage.getItem('address')).city;
