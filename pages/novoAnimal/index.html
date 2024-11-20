@@ -69,7 +69,123 @@
             </ul>
         </nav>
     </header>
+
     <main>
+        <section class="form-container">
+            <h1>Cadastre um peludo para adoção</h1>
+            <p>Primeiro vamos cadastrar as informações essenciais e obrigatórias (marcadas com *)</p>
+
+            <form class="adoption-form">
+                <fieldset>
+                    <legend>Identificação</legend>
+
+                    <label for="nome">Nome do bichinho*</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <div class="inline-fields">
+                        <div class="field-group">
+                            <label for="especie">Espécie*</label>
+                            <input type="text" id="especie" name="especie" required>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="sexo">Sexo*</label>
+                            <select id="sexo" name="sexo" required>
+                                <option value="macho">Macho</option>
+                                <option value="femea">Fêmea</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="inline-fields">
+                        <div class="field-group">
+                            <label for="idade">Idade*</label>
+                            <input type="text" id="idade" name="idade" required>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="porte">Porte*</label>
+                            <select id="porte" name="porte" required>
+                                <option value="pequeno">Pequeno</option>
+                                <option value="medio">Médio</option>
+                                <option value="grande">Grande</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="inline-fields">
+                        <div class="field-group">
+                            <label for="estado">Estado*</label>
+                            <select id="estado" name="estado" required>
+                                <option value="" disabled selected>Selecione um estado</option>
+                                <option value="AC">Acre (AC)</option>
+                                <option value="AL">Alagoas (AL)</option>
+                                <option value="AP">Amapá (AP)</option>
+                                <option value="AM">Amazonas (AM)</option>
+                                <option value="BA">Bahia (BA)</option>
+                                <option value="CE">Ceará (CE)</option>
+                                <option value="DF">Distrito Federal (DF)</option>
+                                <option value="ES">Espírito Santo (ES)</option>
+                                <option value="GO">Goiás (GO)</option>
+                                <option value="MA">Maranhão (MA)</option>
+                                <option value="MT">Mato Grosso (MT)</option>
+                                <option value="MS">Mato Grosso do Sul (MS)</option>
+                                <option value="MG">Minas Gerais (MG)</option>
+                                <option value="PA">Pará (PA)</option>
+                                <option value="PB">Paraíba (PB)</option>
+                                <option value="PR">Paraná (PR)</option>
+                                <option value="PE">Pernambuco (PE)</option>
+                                <option value="PI">Piauí (PI)</option>
+                                <option value="RJ">Rio de Janeiro (RJ)</option>
+                                <option value="RN">Rio Grande do Norte (RN)</option>
+                                <option value="RS">Rio Grande do Sul (RS)</option>
+                                <option value="RO">Rondônia (RO)</option>
+                                <option value="RR">Roraima (RR)</option>
+                                <option value="SC">Santa Catarina (SC)</option>
+                                <option value="SP">São Paulo (SP)</option>
+                                <option value="SE">Sergipe (SE)</option>
+                                <option value="TO">Tocantins (TO)</option>
+                            </select>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="cidade">Cidade*</label>
+                            <input type="text" id="cidade" name="cidade" required>
+                        </div>
+                    </div>
+
+                    <label for="descricao">Sobre o bichinho*</label>
+                    <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+                    <label for="foto">Foto principal*</label>
+                    <input type="file" id="foto" name="foto" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Outras Informações</legend>
+                    <div class="checkbox-group">
+                        <p>Cuidados Veterinários:</p>
+                        <label><input type="checkbox" name="cuidados" value="castrado"> Castrado</label>
+                        <label><input type="checkbox" name="cuidados" value="vacinado"> Vacinado</label>
+                        <label><input type="checkbox" name="cuidados" value="vermifugado"> Vermifugado</label>
+                        <label><input type="checkbox" name="cuidados" value="cuidados-especiais"> Precisa de
+                            cuidados
+                            especiais</label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <p>Temperamento:</p>
+                        <label><input type="checkbox" name="temperamento" value="docil"> Dócil</label>
+                        <label><input type="checkbox" name="temperamento" value="agressivo"> Agressivo</label>
+                        <label><input type="checkbox" name="temperamento" value="calmo"> Calmo</label>
+                        <label><input type="checkbox" name="temperamento" value="brincalhao"> Brincalhão</label>
+                        <label><input type="checkbox" name="temperamento" value="sociavel"> Sociável</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="submit-btn">Salvar</button>
+            </form>
+        </section>
     </main>
 
     <script src="./script.js" type="module"></script>
