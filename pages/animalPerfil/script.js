@@ -27,6 +27,7 @@ window.addEventListener("load", async () => {
             target.innerHTML += `<${element}>${obj[key]}</${element}>`
         }
     }
+
     document.getElementById("animalImg").src = petData.pet.main_photo
     document.getElementById("catName").textContent = petData.pet.name
     document.getElementById("breed").textContent = petData.pet.breed
@@ -41,8 +42,11 @@ window.addEventListener("load", async () => {
     }
 
     document.getElementById("gender").textContent = petData.pet.gender === "M" ? "Macho" : "Femea"
-    document.getElementById("city").textContent = petData.pet.address.city
-    document.getElementById("state").textContent = petData.pet.address.state.toUpperCase()
+    document.getElementById("city").textContent = petData.pet.city
+    document.getElementById("state").textContent = petData.pet.state
+    document.getElementById("aboutMe").textContent = petData.pet.about
+    showInfo(JSON.parse(petData.pet.temperament), document.getElementById("behaviorList"))
+    showInfo(JSON.parse(petData.pet.veterinary_care), document.getElementById("cuidadosVeterinariosList"))
 })
 
 

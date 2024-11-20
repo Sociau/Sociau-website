@@ -61,6 +61,41 @@ const createAccount = async (person) => {
   }
 }
 
+const addNewPet = async (pet) => {
+  try {
+    const formData = new FormData();
+
+    formData.append('name', pet.name);
+    formData.append('species', pet.species);
+    formData.append('gender', pet.gender);
+    formData.append('age', pet.age);
+    formData.append('breed', pet.breed);
+    formData.append('size', pet.size);
+    formData.append('state', pet.state);
+    formData.append('city', pet.city);
+    formData.append('description', pet.description);
+    formData.append('main_photo', pet.photo);
+    formData.append('veterinary_care', JSON.stringify(pet.vet_care));
+    formData.append('temperament', JSON.stringify(pet.temperament))
+    formData.append("person_id", JSON.parse(localStorage.getItem('user')).id);
+
+    const response = await fetch(`${config.BASE_URL}pets`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${localStorage.getItem('token')}`,
+      },
+      body: formData,
+    })
+
+    const data = await response.json()
+    return data
+
+  } catch (error) {
+    console.log(error)
+  }
+
+}
+
 const logout = () => {
   localStorage.removeItem('token')
   localStorage.removeItem('user')
@@ -132,4 +167,4 @@ const getAdoptionHistory = async (pet_id) => {
   }
 }
 
-export { login, createAccount, getToken, getUser, getUserById, logout, getPets, getAdoptionHistory, getPetById }
+export { login, createAccount, addNewPet, getToken, getUser, getUserById, logout, getPets, getAdoptionHistory, getPetById }

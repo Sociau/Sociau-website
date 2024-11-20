@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sociau - Quem somos</title>
+    <title>Sociau - Novo animal</title>
     <link rel="icon" role="img"
         href="https://firebasestorage.googleapis.com/v0/b/sociau-27036.appspot.com/o/Icones%2FSociau_icon.svg?alt=media&token=ff0c834e-07b6-4a6b-9a42-1368846b08ab">
     <link rel="stylesheet" href="../../styles/root.css">
@@ -72,8 +72,8 @@
 
     <main>
         <section class="form-container">
-            <h1>Cadastre um peludo para adoção</h1>
-            <p>Primeiro vamos cadastrar as informações essenciais e obrigatórias (marcadas com *)</p>
+            <h1 class="form-title">Cadastre um peludo para adoção</h1>
+            <p class="form-description">Primeiro vamos cadastrar as informações essenciais e obrigatórias (marcadas com *)</p>
 
             <form class="adoption-form">
                 <fieldset>
@@ -91,8 +91,8 @@
                         <div class="field-group">
                             <label for="sexo">Sexo*</label>
                             <select id="sexo" name="sexo" required>
-                                <option value="macho">Macho</option>
-                                <option value="femea">Fêmea</option>
+                                <option value="M">Macho</option>
+                                <option value="F">Fêmea</option>
                             </select>
                         </div>
                     </div>
@@ -104,11 +104,20 @@
                         </div>
 
                         <div class="field-group">
+                            <label for="raca">Raça*</label>
+                            <input type="text" id="raca" name="raca" required>
+                        </div>
+                    </div>
+
+                    <div class="inline-fields">
+                        
+
+                        <div class="field-group">
                             <label for="porte">Porte*</label>
                             <select id="porte" name="porte" required>
-                                <option value="pequeno">Pequeno</option>
-                                <option value="medio">Médio</option>
-                                <option value="grande">Grande</option>
+                                <option value="P">Pequeno</option>
+                                <option value="M">Médio</option>
+                                <option value="G">Grande</option>
                             </select>
                         </div>
                     </div>
@@ -165,21 +174,19 @@
                     <legend>Outras Informações</legend>
                     <div class="checkbox-group">
                         <p>Cuidados Veterinários:</p>
-                        <label><input type="checkbox" name="cuidados" value="castrado"> Castrado</label>
-                        <label><input type="checkbox" name="cuidados" value="vacinado"> Vacinado</label>
-                        <label><input type="checkbox" name="cuidados" value="vermifugado"> Vermifugado</label>
-                        <label><input type="checkbox" name="cuidados" value="cuidados-especiais"> Precisa de
-                            cuidados
-                            especiais</label>
+                        <label id="castrado">Castrado</label>
+                        <label id="vacinado">Vacinado</label>
+                        <label id="vermifugado">Vermifugado</label>
+                        <label id="especial">Precisa de cuidados especiais</label>
                     </div>
 
                     <div class="checkbox-group">
                         <p>Temperamento:</p>
-                        <label><input type="checkbox" name="temperamento" value="docil"> Dócil</label>
-                        <label><input type="checkbox" name="temperamento" value="agressivo"> Agressivo</label>
-                        <label><input type="checkbox" name="temperamento" value="calmo"> Calmo</label>
-                        <label><input type="checkbox" name="temperamento" value="brincalhao"> Brincalhão</label>
-                        <label><input type="checkbox" name="temperamento" value="sociavel"> Sociável</label>
+                        <label id="docil">Dócil</label>
+                        <label id="agressivo">Agressivo</label>
+                        <label id="calmo">Calmo</label>
+                        <label id="brincalhao">Brincalhão</label>
+                        <label id="sociavel">Sociável</label>
                     </div>
                 </fieldset>
 
