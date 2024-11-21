@@ -82,8 +82,14 @@ h3 {
 
 }
 
+.publicacao p {
+    display: flex;
+    width: 100%;
+}
+
 .location .publicacao span {
     color: var(--third-color);
+    margin-left: 1%;
 }
 
 .behavior {
@@ -173,10 +179,87 @@ h3 {
     width: 50%;
     height: 77px;
     cursor: pointer;
+    margin-bottom: 5%;
 }
 
 
 .button button:hover {
     transition: 0.5s;
     background-color: #e67a16;
+}
+
+.blurred-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.modal-contact {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 40vh;
+    background-color: #8b95d1;
+    z-index: 9999;
+    margin-top: 15%;
+    border-radius: 15px;
+    margin-left: 25%;
+    display: none;
+}
+
+.modal-contact .image {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+.modal-contact .image img {
+    width: 200px;
+    height: 200px;
+}
+
+.modal-contact .details {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.modal-contact .details div {
+    display: flex;
+    align-items: center;
+    margin: 2%;
+}
+
+.modal-contact .details div p {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.modal-contact .details .title {
+    padding-left: 3%;
+}
+
+.modal-contact .details div .image-details {
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-contact .details div:nth-child(1) img {
+    width: 35px;
+    height: 30px;
+}
+
+.modal-contact .details div:nth-child(2) img {
+    width: 40px;
+    height: 30px;
 }

@@ -114,10 +114,7 @@ document.getElementById('registerForm').addEventListener('submit', async functio
   };
 
   try {
-    console.log(data);
     const response = await createAccount(data);
-
-    console.log(response)
 
     if (response.status == 200) {
       document.getElementById('modal-register').style.display = "flex";
