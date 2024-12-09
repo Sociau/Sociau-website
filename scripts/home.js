@@ -72,12 +72,13 @@ const petsList = async () => {
         const pet = petData.pet
         const petPhoto = pet.main_photo || ''
         document.getElementById('pets').innerHTML += `
-            <a href="./pages/animalPerfil/index.html?id=${pet.id}" class="animal">
+            <a href="./pages/animalPerfil/index.html?id=${pet.id}" class="animal${pet.adopted ? ' adotado' : ''}">
                 <img src="${petPhoto}" alt="">
                 <div class="text">
                     <h1>${pet.name}</h1>
                     <p>${pet.city}</p>
                 </div>
+                ${pet.adopted ? '<div class="adotadoText"><p>Adotado</p></div>' : ''}
             </a>`
     })
 }
@@ -89,8 +90,6 @@ const filterPets = async () => {
     const gender = document.getElementById('gender').value
     const size = document.getElementById('size').value
     const search = document.getElementById("search").value
-
-    console.log('hehe')
 
     if (state != "default") {
         filter["state"] = state
@@ -127,17 +126,17 @@ const filterPets = async () => {
     document.getElementById("pets").innerHTML = ''
 
     if (pets.pets.length > 0) {
-        console.log('pets', pets)
         await pets.pets.map(petData => {
             const pet = petData.pet
             const petPhoto = pet.main_photo || ''
             document.getElementById('pets').innerHTML += `
-                <a href="./pages/animalPerfil/index.html?id=${pet.id}" class="animal">
+                <a href="./pages/animalPerfil/index.html?id=${pet.id}" class="animal${pet.adopted ? ' adotado' : ''}">
                     <img src="${petPhoto}" alt="">
                     <div class="text">
                         <h1>${pet.name}</h1>
                         <p>${pet.city}</p>
                     </div>
+                    ${pet.adopted ? '<div class="adotadoText"><p>Adotado</p></div>' : ''}
                 </a>`
         })
     }

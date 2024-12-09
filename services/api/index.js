@@ -167,4 +167,24 @@ const getAdoptionHistory = async (pet_id) => {
   }
 }
 
-export { login, createAccount, addNewPet, getToken, getUser, getUserById, logout, getPets, getAdoptionHistory, getPetById }
+
+const updatePet = async (pet_id, formData) => {
+  try {
+    const token = localStorage.getItem('token');
+    const response = await fetch(`${config.BASE_URL}pets/${pet_id}`, {
+      method: 'PUT',
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+      body: formData,
+    });
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Erro na atualização do pet:', error);
+  }
+};
+
+
+export { login, createAccount, addNewPet, getToken, getUser, getUserById, logout, getPets, getAdoptionHistory, getPetById, updatePet }

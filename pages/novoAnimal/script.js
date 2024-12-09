@@ -96,12 +96,14 @@ window.addEventListener('load', () => {
         const raca = document.getElementById('raca').value;
         const descricao = document.getElementById('descricao').value;
         const foto = document.getElementById('foto').files[0];
+        const sobre = document.getElementById('descricao').value;
 
         const data = {
             name: nome,
             species: especie,
             gender: sexo,
             breed: raca,
+            about: sobre,
             age: idade,
             size: porte,
             state: estado,
