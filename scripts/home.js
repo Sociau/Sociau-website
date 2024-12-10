@@ -1,38 +1,15 @@
 import { getPets } from '../services/api/index.js'
+import { getCities, getStates } from "../services/api/citiesApi.js"
 
 const petsList = async () => {
+    const states = await getStates()
     const pets = await getPets() || { pets: [] }
 
     const state = document.getElementById('state')
-    const city = document.getElementById('city')
     const species = document.getElementById('species')
-    const gender = document.getElementById('gender')
-    const size = document.getElementById('size')
 
-    const uniqueStates = new Set();
-    state.innerHTML += await pets.pets.map(pet => {
-        const stateName = pet.pet.state
-        if (stateName !== null) {
-            if (!uniqueStates.has(stateName)) {
-                uniqueStates.add(stateName)
-                return `<option value="${stateName}">${stateName}</option>`
-            }
-            return ''
-        }
-
-    })
-
-    const uniqueCities = new Set();
-    city.innerHTML += await pets.pets.map(pet => {
-        const cityName = pet.pet.city
-        if (cityName !== null) {
-            if (!uniqueCities.has(cityName)) {
-                uniqueCities.add(cityName)
-                return `<option value="${cityName}">${cityName}</option>`
-            }
-            return ''
-        }
-
+    state.innerHTML += await states.geonames.map(state => {
+        return `<option value="${state.adminCodes1["ISO3166_2"]}:${state.geonameId}">${state.toponymName}</option>`
     })
 
     const uniqueSpecies = new Set();
@@ -41,28 +18,6 @@ const petsList = async () => {
         if (!uniqueSpecies.has(speciesName)) {
             uniqueSpecies.add(speciesName)
             return `<option value="${speciesName}">${speciesName}</option>`
-        }
-        return ''
-    })
-
-
-    const uniqueGenders = new Set();
-    gender.innerHTML += await pets.pets.map(pet => {
-        const genderName = pet.pet.gender
-        if (!uniqueGenders.has(genderName)) {
-            uniqueGenders.add(genderName)
-            return `<option value="${genderName}">${genderName}</option>`
-        }
-        return ''
-    })
-
-
-    const uniqueSizes = new Set();
-    size.innerHTML += await pets.pets.map(pet => {
-        const sizeName = pet.pet.size
-        if (!uniqueSizes.has(sizeName)) {
-            uniqueSizes.add(sizeName)
-            return `<option value="${sizeName}">${sizeName}</option>`
         }
         return ''
     })
@@ -84,7 +39,7 @@ const petsList = async () => {
 }
 const filterPets = async () => {
     let filter = {}
-    const state = document.getElementById('state').value
+    const state = (document.getElementById("state").value).split(":")[0]
     const city = document.getElementById('city').value
     const species = document.getElementById('species').value
     const gender = document.getElementById('gender').value
@@ -142,7 +97,22 @@ const filterPets = async () => {
     }
 }
 
+document.getElementById("state").addEventListener("change", async () => {
+    const cityInput = document.getElementById("city")
+
+    const cities = await getCities((document.getElementById("state").value).split(":")[1])
+
+    console.log(cities)
+
+    cityInput.innerHTML += await cities.geonames.map(city => {
+        return `<option value="${city.toponymName}">${city.toponymName}</option>`
+    })
+
+    cityInput.disabled = false
+})
+
 window.addEventListener("load", async () => {
+    document.getElementById("city").disabled = true
     await petsList()
     document.getElementById('state').addEventListener('change', filterPets)
     document.getElementById('city').addEventListener("change", filterPets)

@@ -6,6 +6,7 @@ const petData = await getPetById(window.location.href.split("id=")[1])
 
 
 window.addEventListener("load", async () => {
+    document.getElementById("title").innerText = `Sociau - ${petData.pet.name}`
     const adoptionHistory = await getAdoptionHistory(petData.pet.id)
     let person
     document.getElementById("user").style.display = "none"

@@ -73,7 +73,7 @@ const addNewPet = async (pet) => {
     formData.append('size', pet.size);
     formData.append('state', pet.state);
     formData.append('city', pet.city);
-    formData.append('description', pet.description);
+    formData.append('about', pet.about);
     formData.append('main_photo', pet.photo);
     formData.append('veterinary_care', JSON.stringify(pet.vet_care));
     formData.append('temperament', JSON.stringify(pet.temperament))

@@ -94,22 +94,20 @@ window.addEventListener('load', () => {
         const estado = document.getElementById('estado').value;
         const cidade = document.getElementById('cidade').value;
         const raca = document.getElementById('raca').value;
-        const descricao = document.getElementById('descricao').value;
         const foto = document.getElementById('foto').files[0];
         const sobre = document.getElementById('descricao').value;
 
         const data = {
             name: nome,
             species: especie,
-            gender: sexo,
             breed: raca,
+            size: porte,
+            gender: sexo,
+            photo: foto,
+            city: cidade,
+            state: estado,
             about: sobre,
             age: idade,
-            size: porte,
-            state: estado,
-            city: cidade,
-            description: descricao,
-            photo: foto,
             vet_care: selectedVetCare,
             temperament: selectedTemp
         }
