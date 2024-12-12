@@ -102,7 +102,7 @@ document.getElementById("state").addEventListener("change", async () => {
 
     const cities = await getCities((document.getElementById("state").value).split(":")[1])
 
-    console.log(cities)
+    cityInput.innerHTML = `<option value="default">Cidade</option>`
 
     cityInput.innerHTML += await cities.geonames.map(city => {
         return `<option value="${city.toponymName}">${city.toponymName}</option>`
