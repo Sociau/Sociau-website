@@ -1,0 +1,23 @@
+.profile-button {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background-color: var(--color-buttons);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.profile-button p {
+    font-size: var(--font-size-md);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-weigth-medium);
+}
+
+.profile-button p img {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+}
